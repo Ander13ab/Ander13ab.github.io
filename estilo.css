@@ -1,0 +1,101 @@
+body{
+    background-color: darkgrey;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-left: 40px solid black;
+    border-right: 40px solid black;
+    box-sizing: border-box;
+}
+div{
+    padding: 30px;
+}
+.img_principal{
+    display: flex;
+    justify-content: center;    /* Centra horizontalmente */
+/*  align-items: center;        Centra verticalmente */
+/*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
+}
+img {
+    max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
+    height: auto;   /* Mantiene la proporción de la imagen */
+}
+p{
+    text-align: justify;
+    margin-left: 10px;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: black;
+    color: lightslategrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h2{
+    font-size: 30px;
+    font-variant: small-caps;
+}
+ol{
+    padding: 0;
+}
+li{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    background-color: lightslategray;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-variant: small-caps;
+}
+li:hover {
+    background-color: black;
+    color: lightslategray;
+}
+a{
+    color: inherit;
+    /*Toma el color del padre*/
+    text-decoration: inherit;
+    font-size: inherit;
+}
+.volver{
+    background-color: black;
+    color: lightslategray;
+    padding: 5px;
+    font-size: 15px;
+    font-variant: small-caps;
+    text-align: center;
+    display: block;
+    width:fit-content ;     /* Ancho fijo para que el margen automático funcione */
+    margin: auto;     /* Centra horizontalmente */
+}
+.volver:hover{
+    background-color: rgb(61, 66, 71);
+    color: black;
+
+}
+.copyright{
+    text-align: right;
+    font-size: 12px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}

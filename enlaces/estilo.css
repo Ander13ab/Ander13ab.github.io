@@ -18,14 +18,7 @@ article{
 /*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
 }
 figcaption{
-    text-align: right;
-    font-size: 12px;
-    margin-top: 0;
-    color: lightslategray;
-
-}
-figcaption:hover{
-    color: black;
+    text-align: center;
 }
 img {
     max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
@@ -49,15 +42,12 @@ h2{
     font-size: 30px;
     font-variant: small-caps;
 }
-h2:target{
-    text-decoration: underline 3px solid lightslategray;
-}
 ol{
     padding: 0;
 }
 li{
     display: inline-block;
-    width: 25%;
+    width: 33%;
     text-align: center;
     background-color: lightslategray;
     text-decoration: none;
@@ -111,9 +101,4 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
-}
-main{
-    padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
 }

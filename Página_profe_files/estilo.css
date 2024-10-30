@@ -1,0 +1,63 @@
+body {
+  background-image: url("imagenes/cabecera.png");
+  background-size: cover;
+   height: 100vh;
+overflow:hidden;
+}
+section{
+  position:absolute;
+
+  width:300px;
+  height:320px;
+  overflow-x:hidden;
+  overflow-y:auto;
+ margin:auto;
+ background-color:white;
+ border-radius: 15px;
+ padding:10px;
+}
+#dam{
+  top:100px;
+  right:80px;
+}
+#asir{
+  top:100px;
+  right:420px;
+}
+section h2{
+  text-align:center;
+  font-size:1.2em;
+  border-bottom:2px solid #000;
+}
+section p{
+  font-size:0.9em;
+}
+section p:before{
+  content:"— "
+}
+section a{
+  color:inherit;
+  text-decoration:none
+}
+h1{
+  background-color:gray;
+     font-size:18px;
+     text-align:center;
+  color:white;
+ margin:auto;
+ padding: 0 10px;
+}
+header p{
+    font-size:12px;
+    text-align:center;
+  color:white;
+  background-color:gray;
+  margin:auto;
+ padding: 0 10px;
+}
+footer{
+  height:30px;
+  position:absolute;
+  bottom:40px;
+  text-align:right;
+}

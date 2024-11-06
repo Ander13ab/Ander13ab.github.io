@@ -9,9 +9,10 @@ body{
     box-sizing: border-box;
 }
 article{
-    padding: 30px;
+    padding: 2%;
 }
 .img_principal{
+    margin-top: 7%;
     display: flex;
     justify-content: center;    /* Centra horizontalmente */
 /*  align-items: center;        Centra verticalmente */
@@ -30,6 +31,10 @@ figcaption:hover{
 img {
     max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
     height: auto;   /* Mantiene la proporción de la imagen */
+}
+#imagen_emular{
+    display: flex;
+    justify-content: center;
 }
 p{
     text-align: justify;
@@ -53,6 +58,7 @@ h2:target{
     text-decoration: underline 3px solid lightslategray;
 }
 ol{
+    margin-top: 5%;
     padding: 0;
 }
 li{

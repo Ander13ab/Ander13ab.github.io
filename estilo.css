@@ -123,3 +123,14 @@ main{
     padding-left: 15px;
     padding-right: 15px;
 }
+.conjuntoIntro,.conjuntoPlay,.conjuntoNintendo,.conjuntoSega {
+    display: flex;
+    gap: 10px;
+}
+.conjuntoIntro>p,.conjuntoPlay>p,.conjuntoNintendo>p,.conjuntoSega>p {
+    flex: 4;
+}
+.conjuntoIntro>figure,.conjuntoPlay>figure,.conjuntoNintendo>figure,.conjuntoSega>figure {
+    flex: 1;
+    text-align: center;
+}

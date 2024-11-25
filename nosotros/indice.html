@@ -18,63 +18,69 @@
 <body>
     <header>
         <div>
-            <h1 id="titulo">Conoce toda la información de los emuladores para juegos</h1>
-            <figure class="img_principal">
-                <picture>
-                    <source srcset="imagenes/primera_imagen.jpg"  media="(min-width:721px)" alt="Consolas retro que puedes emular " width="460" height="259"> <!---Para ajustar el tamaño de las imagenes pensando en dispositivos móviles--->
-                    <source srcset="imagenes/primera_imagen_2.jpg" media="(max-width:720px)" />
-                    <img src="imagenes/primera_imagen.jpg" alt="imagen2">
-                    <figcaption>Consolas Retro</figcaption>
-                </picture>
-            </figure>
+            <h1 id="titulo">Sobre Nosotros</h1>
+            <picture class="img_principal">
+                <source srcset="../imagenes/primera_imagen.webp" media="(min-width:721px)" alt="Imagen principal sobre nosotros con varias consolas retro" width="460" height="259">
+                <source srcset="../imagenes/primera_imagen_2.webp" media="(max-width:720px)">
+                <img src="../imagenes/primera_imagen.webp" alt="Imagen principal sobre nosotros con varias consolas retro">
+            </picture>
             <nav>
                 <ol id="indice">
-                <li><a href="#queEmular">Consolas para emular</a></li><li><a href="#playstation">PlayStation</a></li><li><a href="#nintendo">Nintendo</a></li><li><a href="#sega">Sega</a></li>
+                    <li><a href="#quienesSomos">Quiénes somos</a></li>
+                    <li><a href="#queHacemos">Qué hacemos</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
                 </ol>
             </nav>
         </div>
     </header>
     <main>
-        <div>
-            <h2 id="queEmular">Qué consolas podrás emular</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eveniet culpa impedit praesentium molestias
-            quod ipsam at voluptas amet accusantium facere, totam aliquid accusamus, quisquam optio. Ratione laboriosam
-            id aut.
-            Nemo, aspernatur totam! Suscipit, aliquam. Nemo neque quidem, earum velit sunt sit doloremque quibusdam
-            minima saepe obcaecati temporibus! Aspernatur quaerat itaque ut enim nihil, quia voluptatum quas nobis
-            veritatis placeat?
-            Cum soluta illo assumenda ratione provident nulla tempore, distinctio totam inventore vel ipsum obcaecati,
-            possimus necessitatibus aliquam sunt. Officia cupiditate beatae qui repellendus, in aliquid dolore
-            voluptatibus quam voluptas voluptatem.</p><a class="volver" href="#indice">&uarr;---indice---&uarr;</a>
-        </div>
-        <div>
-            <h2 id="playstation">PlayStation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum delectus officia reiciendis at mollitia blanditiis numquam ullam pariatur temporibus quis suscipit deleniti, illo corrupti voluptas nihil totam incidunt sit? Itaque, rem? Perferendis nulla possimus natus vel labore iste quisquam in dolor, tempore, laboriosam consectetur excepturi! Eos illo, ut sequi doloribus vitae placeat dolorum commodi maiores necessitatibus reprehenderit, error numquam, perspiciatis aperiam consequatur corporis? Quos dolorem assumenda porro eaque nam inventore, illum corporis minima perferendis eligendi distinctio nostrum hic reprehenderit natus aperiam doloribus laudantium. Dolorem deleniti inventore, delectus cupiditate sit blanditiis molestias laboriosam beatae quo maiores vero, aut modi, nesciunt voluptatem.</p><a class="volver" href="#indice">&uarr;---indice---&uarr;</a>
-        </div>
-        <div>
-            <h2 id="nintendo">Nintendo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque cumque omnis veritatis aliquid molestiae, eos rerum iusto accusamus voluptatibus odio minus, perspiciatis necessitatibus debitis corrupti quos, rem fuga cum!
-            A dolor eius possimus unde error provident debitis similique impedit, est numquam! Libero omnis saepe dolorem, provident quas dolorum neque sed exercitationem, laudantium maiores quos totam nam maxime ea nobis?</p><a class="volver" href="#indice">&uarr;---indice---&uarr;</a>
-        </div>
-        <div>
-            <h2 id="sega">Sega</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque cumque omnis veritatis aliquid molestiae, eos rerum iusto accusamus voluptatibus odio minus, perspiciatis necessitatibus debitis corrupti quos, rem fuga cum!
-            A dolor eius possimus unde error provident debitis similique impedit, est numquam! Libero omnis saepe dolorem, provident quas dolorum neque sed exercitationem, laudantium maiores quos totam nam maxime ea nobis?</p><a class="volver" href="#indice">&uarr;---indice---&uarr;</a>
-        </div>
+        <article>
+            <h2 id="quienesSomos">Quiénes Somos</h2>
+            <p>Somos un equipo apasionado por las consolas portátiles y su emulación. Nos dedicamos a compartir información
+                útil, tutoriales y guías para que los jugadores puedan disfrutar de sus títulos favoritos en cualquier
+                momento y lugar.</p>
+            <p>Nuestra misión es hacer que la emulación sea accesible y comprensible para todos, preservando la experiencia
+                auténtica de las consolas portátiles más icónicas.</p>
+        </article>
+        <article>
+            <h2 id="queHacemos">Qué Hacemos</h2>
+            <p>En nuestra página, encontrarás información detallada sobre:</p>
+            <ul>
+                <li>Las consolas portátiles más influyentes de la historia, como Game Boy, PSP y Nintendo DS.</li>
+                <li>Guías para emular tus juegos favoritos de forma segura y sencilla.</li>
+                <li>Recomendaciones de emuladores, software y configuraciones óptimas.</li>
+                <li>Consejos para optimizar el rendimiento y personalizar tu experiencia de juego.</li>
+            </ul>
+            <picture>
+                <img src="../imagenes/imagen_emular.gif" alt="GIF imagen de consolas para emular" width="300" height="200">
+            </picture>
+        </article>
+        <article>
+            <h2 id="contacto">Contáctanos</h2>
+            <p>Si tienes preguntas, comentarios o sugerencias, no dudes en contactarnos. Estamos aquí para ayudarte a
+                explorar el fascinante mundo de las consolas portátiles y su emulación.</p>
+            <p>Correo electrónico: <a href="mailto:info@consolasportatiles.com">info@consolasportatiles.com</a></p>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><img src="imagenes/facebook-logo.webp"
+                        alt="Facebook" width="100" height="63"></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="imagenes/instagram-logo.webp"
+                        alt="Instagram" width="100" height="56"></a>
+                <a href="https://x.com/" aria-label="Twitter"><img src="imagenes/twitter-logo.webp" alt="Twitter" width="60"
+                        height="61"></a>
+            </div>
+        </article>
     </main>
     <footer>
         <div class="footer-content">
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#titulo">Inicio</a></li><li><a href="#">Sobre nosotros</a></li><li><a href="https://ander13ab.github.io/enlaces" target="_blank">Enlaces</a></li>
+                    <li><a href="https://ander13ab.github.io/" target="nueva">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="https://ander13ab.github.io/enlaces" target="nueva" title="Enlace página de enlaces">Enlaces</a></li>
                 </ul>
             </nav>
-            <div class="social-media">
-                <a href="https://www.facebook.com/" aria-label="Facebook"><img src="imagenes/facebook-logo.png" alt="Facebook" width="100" height="63"></a>
-                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="imagenes/instagram-logo.png" alt="Instagram" width="100" height="56"></a>
-                <a href="https://x.com/" aria-label="Twitter"><img src="imagenes/twitter-logo.png" alt="Twitter" width="60" height="61"></a>
-            </div>
-            <p class="copyright">&copy; 2024 Anderson Avellaneda | CDM FP</p>
+            <p class="copyright">&copy; 2024 Consolas Portátiles - Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

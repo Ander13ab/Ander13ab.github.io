@@ -12,7 +12,6 @@ body{
     margin-top: 7%;
     display: block;
     text-align: center;    /* Centra horizontalmente */
-/*  align-items: center;        Centra verticalmente */
 /*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
 }
 img {
@@ -33,13 +32,10 @@ img {
 #videos video:hover{
     border: 2px ridge black;
     background-color: lightslategray; 
-}
-#video1:hover ~ video,#video2:hover ~ video,#video3:hover ~ video{
-    display:none;
+    border-radius: 10px;
 }
 p{
     text-align: justify;
-    
     font-size: 20px;
 }
 h1{
@@ -59,7 +55,7 @@ h2{
     font-variant: small-caps;
 }
 h2:target{
-    text-decoration: underline 3px solid lightslategray;
+    text-decoration: underline 4px solid lightslategray;
 }
 ol{
     margin-top: 5%;
@@ -94,6 +90,7 @@ p a:hover{
 }
 .volver{
     background-color: black;
+    border-radius: 5px;
     color: lightslategray;
     padding: 5px;
     font-size: 10px;
@@ -104,12 +101,13 @@ p a:hover{
     margin: auto;     /* Centra horizontalmente */
 }
 .volver:hover{
-    background-color: rgb(61, 66, 71);
+    background-color: #333;
     color: black;
 }
 .copyright{
     text-align: right;
     font-size: 12px;
+    margin-right: 10px;
 }
 footer {
     background-color:#333;
@@ -119,9 +117,10 @@ footer {
 .footer-nav li {
     list-style: none;
     padding: 5px;
-    margin: 20px;
+    margin: 10px;
     display: inline-block;
     text-align: center;
+    border-radius: 8px;
 }
 main{
     padding-bottom: 40px;

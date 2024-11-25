@@ -8,37 +8,20 @@ body{
     border-right: 40px solid black;
     box-sizing: border-box;
 }
-article{
-    padding: 2%;
-}
 .img_principal{
     margin-top: 7%;
-    display: flex;
-    justify-content: center;    /* Centra horizontalmente */
+    display: block;
+    text-align: center;    /* Centra horizontalmente */
 /*  align-items: center;        Centra verticalmente */
 /*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
-}
-figcaption{
-    text-align: right;
-    font-size: 12px;
-    margin-top: 0;
-    color: lightslategray;
-
-}
-figcaption:hover{
-    color: black;
 }
 img {
     max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
     height: auto;   /* Mantiene la proporción de la imagen */
 }
-#imagen_emular{
-    display: flex;
-    justify-content: center;
-}
 p{
     text-align: justify;
-    margin-left: 10px;
+    
     font-size: 20px;
 }
 h1{
@@ -61,7 +44,7 @@ ol{
     margin-top: 5%;
     padding: 0;
 }
-li{
+#indice>li, .footer-nav li{
     display: inline-block;
     width: 25%;
     text-align: center;
@@ -75,7 +58,7 @@ li{
     padding-bottom: 15px;
     font-variant: small-caps;
 }
-li:hover {
+#indice>li:hover,.footer-nav li:hover{
     background-color: black;
     color: lightslategray;
 }
@@ -85,11 +68,14 @@ a{
     text-decoration: inherit;
     font-size: inherit;
 }
+p a:hover{
+    color: tomato;
+}
 .volver{
     background-color: black;
     color: lightslategray;
     padding: 5px;
-    font-size: 15px;
+    font-size: 10px;
     font-variant: small-caps;
     text-align: center;
     display: block;
@@ -99,24 +85,22 @@ a{
 .volver:hover{
     background-color: rgb(61, 66, 71);
     color: black;
-
 }
 .copyright{
     text-align: right;
     font-size: 12px;
 }
 footer {
-    background-color: #333;
+    background-color:#333;
     color: #fff;
     text-align: center;
 }
-.footer-nav ul {
+.footer-nav li {
     list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    padding: 5px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
 }
 main{
     padding-bottom: 40px;
@@ -124,13 +108,29 @@ main{
     padding-right: 15px;
 }
 .conjuntoIntro,.conjuntoPlay,.conjuntoNintendo,.conjuntoSega {
-    display: flex;
-    gap: 10px;
+    display: block;
+    margin-bottom: 30px;
 }
 .conjuntoIntro>p,.conjuntoPlay>p,.conjuntoNintendo>p,.conjuntoSega>p {
-    flex: 4;
+    display: inline-block;
+    width: 70%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 15px;
 }
-.conjuntoIntro>figure,.conjuntoPlay>figure,.conjuntoNintendo>figure,.conjuntoSega>figure {
-    flex: 1;
+.conjuntoIntro>picture,.conjuntoPlay>picture,.conjuntoNintendo>picture,.conjuntoSega>picture {
+    display: inline-block;
+    width: 29%;
+    box-sizing: border-box;
+    margin: 0;
     text-align: center;
+}
+#ejemplosNintendo{
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+h3{
+    text-decoration: underline;
+    margin-top: 50px;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conoce toda la información de los emuladores para juegos</title>
     <meta name="keywords" content="">
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="../icon.png" type="image/png">
     <link rel="stylesheet" href="estilo.css">
     <meta name="googlebot" content="index,follow"><!--Es para que los robots indexen y encuentren la pagina-->
     <!--las keywords no sirven para nada-->
@@ -36,24 +36,25 @@
     <main>
         <article>
             <h2 id="quienesSomos">Quiénes Somos</h2>
-            <p>Somos un equipo apasionado por las consolas portátiles y su emulación. Nos dedicamos a compartir información
-                útil, tutoriales y guías para que los jugadores puedan disfrutar de sus títulos favoritos en cualquier
-                momento y lugar.</p>
-            <p>Nuestra misión es hacer que la emulación sea accesible y comprensible para todos, preservando la experiencia
-                auténtica de las consolas portátiles más icónicas.</p>
+            <p>Somos un equipo apasionado por las consolas portátiles y su emulación. Nos dedicamos a compartir información útil, tutoriales y guías para que los jugadores puedan disfrutar de sus títulos favoritos en cualquier momento y lugar.</p>
+            <p>Nuestra misión es hacer que la emulación sea accesible y comprensible para todos, preservando la experiencia auténtica de las consolas portátiles más icónicas.</p>
         </article>
-        <article>
+        <article id="article2">
             <h2 id="queHacemos">Qué Hacemos</h2>
             <p>En nuestra página, encontrarás información detallada sobre:</p>
-            <ul>
-                <li>Las consolas portátiles más influyentes de la historia, como Game Boy, PSP y Nintendo DS.</li>
-                <li>Guías para emular tus juegos favoritos de forma segura y sencilla.</li>
-                <li>Recomendaciones de emuladores, software y configuraciones óptimas.</li>
-                <li>Consejos para optimizar el rendimiento y personalizar tu experiencia de juego.</li>
-            </ul>
-            <picture>
-                <img src="../imagenes/imagen_emular.gif" alt="GIF imagen de consolas para emular" width="300" height="200">
-            </picture>
+            <div id="conjuntoImagen">
+                <ul>
+                    <li>Las consolas portátiles más influyentes de la historia, como Game Boy, PSP y Nintendo DS.</li>
+                    <li>Guías para emular tus juegos favoritos de forma segura y sencilla.</li>
+                    <li>Recomendaciones de emuladores, software y configuraciones óptimas.</li>
+                    <li>Consejos para optimizar el rendimiento y personalizar tu experiencia de juego.</li>
+                </ul>
+                <picture id="imagen_emular">
+                    <source srcset="../imagenes/imagen_emular.gif" media="(max-width:2896px) and (min-width:500px)">
+                    <source srcset="../imagenes/imagen_emular_2.gif" media="(max-width:499px) and (min-width:75px)">
+                    <img src="../imagenes/imagen_emular.gif" alt="GIF imagen de consolas para emular" width="200px" height="150px"><!-- width="200px" height="150px"-->
+                </picture>
+            </div>  
         </article>
         <article>
             <h2 id="contacto">Contáctanos</h2>
@@ -62,12 +63,9 @@
             <p>Correo electrónico: <a href="mailto:info@consolasportatiles.com">info@consolasportatiles.com</a></p>
             <p>Síguenos en nuestras redes sociales:</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/" aria-label="Facebook"><img src="imagenes/facebook-logo.webp"
-                        alt="Facebook" width="100" height="63"></a>
-                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="imagenes/instagram-logo.webp"
-                        alt="Instagram" width="100" height="56"></a>
-                <a href="https://x.com/" aria-label="Twitter"><img src="imagenes/twitter-logo.webp" alt="Twitter" width="60"
-                        height="61"></a>
+                <a href="https://www.facebook.com/" aria-label="Facebook"><img src="../imagenes/facebook-logo.webp" alt="Facebook" width="100" height="63"></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="../imagenes/instagram-logo.webp" alt="Instagram" width="100" height="56"></a>
+                <a href="https://x.com/" aria-label="Twitter"><img src="../imagenes/twitter-logo.webp" alt="Twitter" width="60" height="61"></a>
             </div>
         </article>
     </main>
@@ -75,7 +73,7 @@
         <div class="footer-content">
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="https://ander13ab.github.io/" target="nueva">Inicio</a></li>
+                    <li><a href="https://ander13ab.github.io/" target="nueva" title="Enlace página de inicio">Inicio</a></li>
                     <li><a href="#">Sobre nosotros</a></li>
                     <li><a href="https://ander13ab.github.io/enlaces" target="nueva" title="Enlace página de enlaces">Enlaces</a></li>
                 </ul>

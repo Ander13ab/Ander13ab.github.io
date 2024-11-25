@@ -35,36 +35,45 @@ h2 {
     color: black;
     text-align: left;
 }
-
 h2:target {
     text-decoration: underline 3px solid lightslategray;
 }
-
 p {
     text-align: justify;
     font-size: 18px;
     margin: 15px 0;
 }
-
 a {
     color: inherit;
     /* Toma el color del padre */
     text-decoration: inherit;
     font-size: inherit;
 }
-
 p a:hover {
     color: tomato;
 }
-
 ol {
     margin-top: 5%;
     padding: 0;
     text-align: center;
 }
-
-#indice>li,
-.footer-nav li {
+#conjuntoImagen>ul{
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#conjuntoImagen>picture {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 15px;
+    text-align: right;
+}
+#indice>li,.footer-nav li {
     display: inline-block;
     width: 30%;
     text-align: center;
@@ -78,13 +87,10 @@ ol {
     padding-bottom: 15px;
     font-variant: small-caps;
 }
-
-#indice>li:hover,
-.footer-nav li:hover {
+#indice>li:hover,.footer-nav li:hover {
     background-color: black;
     color: lightslategray;
 }
-
 .volver {
     background-color: black;
     color: lightslategray;
@@ -98,12 +104,10 @@ ol {
     margin: auto;
     /* Centra horizontalmente */
 }
-
 .volver:hover {
     background-color: rgb(61, 66, 71);
     color: black;
 }
-
 main {
     padding: 20px;
 }
@@ -113,17 +117,14 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-
 .footer-nav {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 .footer-nav li {
     display: inline-block;
-    margin: 0 10px;
-    padding: 10px;
+    padding: 5px;
     font-variant: small-caps;
     font-size: 16px;
     color: lightslategray;
@@ -131,18 +132,10 @@ footer {
     background-color: black;
     border-radius: 5px;
 }
-
 .footer-nav li:hover {
     background-color: lightslategray;
     color: black;
 }
-
-.social-media img {
-    margin: 5px;
-    width: 50px;
-    height: auto;
-}
-
 .copyright {
     text-align: right;
     font-size: 12px;

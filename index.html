@@ -24,6 +24,12 @@
                     <source srcset="imagenes/primera_imagen_2.webp" media="(max-width:720px)" />
                     <img src="imagenes/primera_imagen.webp" alt="Imagen página principal">
             </picture>
+            <div id="videos">
+                <h2>Recomendaciones videojuegos:</h2>
+                <video id="video1" src="videos/videoRecomendacion1.mp4" controls muted poster="imagenes/portadaVideo1.webp" width="250px" title="Primer video de recomendación de juegos retro" ><p>No se ha podido cargar el video</p></video>
+                <video id="video2"  src="videos/videoRecomendacion2.mp4" controls muted poster="imagenes/portadaVideo2.webp" width="250px" title="Primer video de recomendación de juegos retro" ><p>No se ha podido cargar el video</p></video>
+                <video id="video2"  src="videos/videoRecomendacion1.mp4" controls muted poster="imagenes/portadaVideo1.webp" width="250px" title="Primer video de recomendación de juegos retro" ><p>No se ha podido cargar el video</p></video>
+            </div>
             <nav>
                 <ol id="indice">
                     <li><a href="#queEmular">Consolas para emular</a></li><li><a href="#playstation">PlayStation</a></li><li><a href="#nintendo">Nintendo</a></li><li><a href="#sega">Sega</a></li>
@@ -51,6 +57,32 @@
                 <picture>
                     <a href="https://www.playstation.com/es-es/" target="_blank" title="Enlace web a la página de PlayStation"><img src="imagenes/logo_Playstation.webp" alt="Logo PlayStation" width="150" height="150"></a>
                 </picture>
+            </div>
+            <div id="ejemplosPlay">
+                <p>Ahora te mostraré cuales pueden ser tus mejores opciones si tienes una PS4 y quieres ampliar tu catálogo de videojuegos: </p>
+                <h3><a href="https://github.com/AlexAltea/orbital" target="_blank" title="Ve a la página oficial de Orbital">1. Orbital</a></h3>
+                <p>Voy a empezar hablando de Orbital, que es en realidad el primer emulador para PS4 que salió al mercado. Se trata de un proyecto que está disponible en GitHub, así que hablamos de una aplicación de código abierto. Entre las muchas opciones que incorpora, está la de cargar diferentes versiones del firmware de la consola de Sony. Así, podrás elegir el que más te convenga en función de tus necesidades. <br><br>El principal problema de esta propuesta es que su desarrollador no ofrece archivos ejecutables. Es el propio usuario el que debe compilar las distintas partes del programa para poder utilizarlo en su PC. Claramente, se trata de una opción inviable para la mayoría de los usuarios, que no disponen de los conocimientos necesarios. Ahora bien, si sabes cuáles son los pasos a seguir, sin duda merece la pena intentarlo.</p>
+                <h4>Características:</h4>
+                <ul>
+                    <li>Actualmente, está diseñado para ejecutarse en sistemas operativos Linux y Windows de 64 bits, pero con configuraciones específicas y hardware robusto</li>
+                    <li>Emula la arquitectura x86-64 de la PS4 a nivel de hardware, lo que lo hace extremadamente complejo y lento en esta etapa de desarrollo.</li>
+                    <li>Requiere que los usuarios descarguen y extraigan el firmware oficial de PS4 por sí mismos, lo cual es técnicamente complicado y, en algunos casos, puede estar en un área gris legal.</li>
+                    <li>El proyecto es de código abierto y está alojado en GitHub, permitiendo que la comunidad contribuya al desarrollo y que los desarrolladores interesados puedan estudiar su funcionamiento.</li>
+                    <li>No tiene interfaz gráfica de usuario (GUI) avanzada, lo que significa que la configuración y el uso del emulador suelen requerir comandos de línea y experiencia técnica.</li>
+                </ul>
+                <h3><a href="https://www.retroarch.com/" target="_blank" title="Ve a la página oficial de RetroArch">2. RetroArch</a></h3>
+                <p>RetroArch es un programa gratuito y de código abierto que funciona como un front-end para la API de libretro, diseñado para ejecutar emuladores, motores de juego, videojuegos y otras aplicaciones llamadas "cores". Es multiplataforma, ligero y portátil, con licencia GNU GPLv3.</p>
+                <h4>Características:</h4>
+                <ul>
+                    <li>Dynamic Rate Control para sincronizar video y audio mientras se suavizan las imperfecciones de tiempo;</li>
+                    <li>Configuración automática de Gamepad - No requiere configuración por parte del usuario después de conectar un gamepad;</li>
+                    <li>Funciones avanzadas de almacenamiento: carga automática del estado de guardado, deshabilitación de sobreescritura de SRAM, etc;</li>
+                    <li>Rebobinación del juego fotograma a fotograma con solo presionar un botón;</li>
+                    <li>Libretro base de datos de núcleos, juegos, cheats, etc;</li>
+                    <li>Soporte para las API OpenGL y Vulkan;</li>
+                    <li>Funciones de juego en red. Se puede participar como anfitrión o unirse a una sesión de otras personas. Se puede usar el modo espectador para ver a terceros jugar;</li>
+                </ul>
+                <p>En esencia, RetroArch centraliza múltiples sistemas y herramientas en una sola plataforma unificada, adaptable a una amplia variedad de dispositivos.</p>
             </div>
             <a class="volver" href="#indice">&uarr;---indice---&uarr;</a>
         </article>
@@ -95,10 +127,29 @@
         <article>
             <h2 id="sega">Sega</h2>
             <div class="conjuntoSega">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque cumque omnis veritatis aliquid molestiae, eos rerum iusto accusamus voluptatibus odio minus, perspiciatis necessitatibus debitis corrupti quos, rem fuga cum!
-                A dolor eius possimus unde error provident debitis similique impedit, est numquam! Libero omnis saepe dolorem, provident quas dolorum neque sed exercitationem, laudantium maiores quos totam nam maxime ea nobis?</p>
+                <p>SEGA es una empresa japonesa de entretenimiento y videojuegos fundada en 1960. Es conocida por desarrollar hardware de videojuegos, como consolas icónicas (Sega Genesis, Dreamcast) y por crear franquicias populares como Sonic the Hedgehog, Yakuza y Virtua Fighter. <br><br>En su historia, SEGA fue un líder influyente en la industria de las consolas, pero desde principios de los 2000, se centró en desarrollar y publicar videojuegos para múltiples plataformas tras abandonar la fabricación de hardware. También opera en otros sectores como juegos arcade y máquinas recreativas. Es una de las empresas más reconocidas en la historia de los videojuegos por su innovación y legado. Sega es el mayor desarrollador de juegos de arcade del mundo, con más de 500 juegos, 76 franquicias y 23 placas de sistemas arcade desde 1981, e inscrita en 2010 en el Libro Guinness de los récords por este hecho.</p>
                 <picture><a href="https://www.sega.com/es" target="_blank" title="Enlace web a la página de Sega"><img src="imagenes/logo_SEGA.webp" alt="Logo Sega" width="200" height="67"></a>
                 </picture>
+            </div>
+            <div>
+                <h3><a href="https://kega-fusion.com/" target="_blank" title="Ve a la página oficial de Kega Fusion">1. Kega Fusion</a></h3>
+                <p>Kega Fusion es un emulador de las videoconsolas Master System/GameGear/Mega Drive/Genesis/Mega CD/Sega CD/32X gratuito para Microsoft Windows, MacOS X y GNU/Linux. Es uno de los más populares emuladores de Mega Drive. Kega Fusion está basado en el emulator Kega y su sucesor Kega Lazarus, ambos discontinuados. Hacia febrero de 2021, Sega Fusion es reconocido por Xfire.</p>
+                <h4>Principales características:</h4>
+                <ul>
+                    <li>Compatible con juegos de Sega Genesis/Mega Drive, Sega CD y 32X.</li>
+                    <li>Ofrece alta compatibilidad con la mayoría de los títulos.</li>
+                    <li>Soporte para multijugador local y conexión en red.</li>
+                    <li>Funciones avanzadas como guardado rápido, cheats y mejoras gráficas.</li>
+                    <li>Disponible para Windows, macOS y Linux.</li>
+                </ul>
+                <h3><a href="https://mednafen.github.io/" target="_blank" title="Ve a la página oficial de Mednafen">2. Mednafen</a></h3>
+                <p>Mednafen (acrónimo de My Emulator Doesn't Need A Frickin' Excellent Name) es un emulador de código abierto, multiplataforma y altamente configurable que soporta una amplia gama de consolas retro y sistemas de videojuegos. Funciona como un emulador multi-sistema, lo que significa que permite ejecutar juegos de varias consolas clásicas desde una sola aplicación.</p>
+                <ul>
+                    <li>Alta precisión: Es conocido por su enfoque en la emulación precisa, lo que garantiza una experiencia cercana al hardware original.</li>
+                    <li>Soporte para controles y personalización: Admite configuraciones avanzadas de controladores.</li>
+                    <li>Características avanzadas: Guardado rápido, rebobinado de juegos en tiempo real, soporte para juegos en red.</li>
+                    <li>Multiplataforma: Funciona en sistemas operativos como Windows, macOS y Linux.</li>
+                </ul>
             </div>
             <a class="volver" href="#indice">&uarr;---indice---&uarr;</a>
         </article>
@@ -107,7 +158,7 @@
         <div class="footer-content">
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#titulo">Inicio</a></li><li><a href="https://ander13ab.github.io/nosotros" target="nueva">Sobre nosotros</a></li><li><a href="https://ander13ab.github.io/enlaces" target="nueva" title="Enlace página de enlaces" >Enlaces</a></li>
+                    <li><a href="#titulo">Inicio</a></li><li><a href="https://ander13ab.github.io/nosotros" target="nueva" title="Enlace página de nosotros">Sobre nosotros</a></li><li><a href="https://ander13ab.github.io/enlaces" target="nueva" title="Enlace página de enlaces" >Enlaces</a></li>
                 </ul>
             </nav>
             <div class="social-media">

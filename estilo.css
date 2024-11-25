@@ -19,6 +19,24 @@ img {
     max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
     height: auto;   /* Mantiene la proporción de la imagen */
 }
+#videos{
+    margin-top: 200px;
+    font-variant: small-caps;
+    text-align: center;
+}
+#videos video{
+    display: inline-block;
+    width: 30% ;
+    padding: 15px;
+    margin-left: 5px;
+}
+#videos video:hover{
+    border: 2px ridge black;
+    background-color: lightslategray; 
+}
+#video1:hover ~ video,#video2:hover ~ video,#video3:hover ~ video{
+    display:none;
+}
 p{
     text-align: justify;
     
@@ -32,6 +50,9 @@ h1{
     color: lightslategrey;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+header{
+    margin-bottom: 100px;
 }
 h2{
     font-size: 30px;
@@ -125,7 +146,7 @@ main{
     margin: 0;
     text-align: center;
 }
-#ejemplosNintendo{
+#ejemplosNintendo, #ejemplosPlay{
     display: block;
     width: 95%;
     margin: auto;

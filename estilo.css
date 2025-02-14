@@ -1,42 +1,203 @@
+@media(max-width:1800px){
+    body {
+        border-left: 40PX solid black;
+        border-right: 40px solid black;
+    }
+    h2 {
+        font-size: 30px;
+        font-variant: small-caps;
+    }
+    p{
+        font-size: 20px;
+    }
+    .volver{
+        font-size: 10px;
+    }
+    /*Media-query navegación*/
+    ol {
+        margin: 0;
+    }
+
+    form li {
+        list-style: none;
+        display: inline-block;
+        background-color: lightslategray;
+        text-align: center;
+        color: black;
+        width: 20%;
+        font-weight: bold;
+        border-right: 1px solid white;
+        box-sizing: border-box;
+        border-collapse: collapse;
+        padding: 3px;
+        margin: 0;
+        font-variant: small-caps;
+    }
+
+    form li:hover {
+        background-color: black;
+        color: lightslategray;
+    }
+
+    form:nth-of-type(1)>input {
+        display: none;
+    }
+    /*^^^^^^^^*/
+    #videos {
+        margin-top: 100px;
+        font-variant: small-caps;
+        text-align: center;
+    }
+    #videos iframe {
+        display: inline-block;
+        width: 30%;
+        padding: 15px;
+        margin-left: 5px;
+        width: 100px;
+        height: 120px;
+    }
+}
+@media(max-width:700px){
+    body {
+        border-left: 20PX solid black;
+        border-right: 20px solid black;
+    }
+    
+    iframe{
+        width:100px;
+        height:100px;
+        display: inline-block;
+        width: 30%;
+    }
+    
+    p{
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4{
+        font-size: 13px;
+    }
+   
+    li{
+        font-size: 10px;
+    }
+    .footer-nav li{
+        font-size: 10px;
+    }
+    .volver{
+        font-size: 6px;
+    }
+    /*Media-query navegación*/
+    form nav ol {
+        margin: 0;
+    }
+
+    form li {
+        list-style: none;
+        display: block;
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 3px;
+        margin-bottom: 1px;
+    }
+
+    form li:hover {
+        background-color: cornflowerblue;
+        color: midnightblue;
+    }
+
+    form nav {
+        display: none;
+    }
+
+    form:nth-of-type(1)>label {
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: 25px;
+    }
+
+    form:nth-of-type(1)>input {
+        display: none;
+    }
+
+    form:nth-of-type(1)>:not(:checked)+label:after {
+        content: "📁";
+    }
+
+    form:nth-of-type(1)>input:checked+label:after {
+        content: "❌";
+    }
+
+    form:nth-of-type(1)>input:checked~nav {
+        display: block;
+    }
+
+    form:nth-of-type(2)>input:checked~div {
+        /*Para ocultar el div cuando esté checked el checkbox (~ hermano no contiguo)*/
+        display: none;
+    }
+
+    form:nth-of-type(2)>input {
+        /*Para ocultar la caja del checkbox*/
+        display: none;
+    }
+
+    form:nth-of-type(2)>:not(:checked)+label:after {
+        /*Para que aparezca solo cuando no esté seleccionado el checkbox*/
+        content: "🌎";
+    }
+
+    form:nth-of-type(2)>input:checked+label:before {
+        /*Para que aparezca la X cuando esta checked el checkbox*/
+        content: "❌";
+    }
+    /*^^^^^^^*/
+}
 body{
     background-color: darkgrey;
-    width: 100%;
+    width: 100vmax;
     height: 100%;
     margin: 0 auto;
     padding: 0;
-    border-left: 40px solid black;
-    border-right: 40px solid black;
     box-sizing: border-box;
 }
 .img_principal{
     margin-top: 7%;
     display: block;
     text-align: center;    /* Centra horizontalmente */
+/*  align-items: center;        Centra verticalmente */
 /*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
 }
 img {
     max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
     height: auto;   /* Mantiene la proporción de la imagen */
 }
-#videos{
-    margin-top: 200px;
-    font-variant: small-caps;
-    text-align: center;
-}
-#videos video{
+
+#videos iframe{
     display: inline-block;
     width: 30% ;
     padding: 15px;
     margin-left: 5px;
 }
-#videos video:hover{
+#videos iframe:hover{
     border: 2px ridge black;
     background-color: lightslategray; 
-    border-radius: 10px;
 }
 p{
     text-align: justify;
-    font-size: 20px;
+    
 }
 h1{
     text-align: center;
@@ -50,20 +211,20 @@ h1{
 header{
     margin-bottom: 100px;
 }
-h2{
-    font-size: 30px;
-    font-variant: small-caps;
-}
+
 h2:target{
-    text-decoration: underline 4px solid lightslategray;
+    text-decoration: underline 3px solid lightslategray;
 }
 ol{
     margin-top: 5%;
     padding: 0;
 }
-#indice>li, .footer-nav li{
+
+.footer-nav li{
     display: inline-block;
+    list-style: none;
     width: 25%;
+    height: 100%;
     text-align: center;
     background-color: lightslategray;
     text-decoration: none;
@@ -72,10 +233,13 @@ ol{
     font-size: 17px;
     margin-top: 40px;
     padding-top: 15px;
+    margin-right: 15px;
     padding-bottom: 15px;
     font-variant: small-caps;
+    border-radius: 10px 0 10px 0;
 }
-#indice>li:hover,.footer-nav li:hover{
+
+.footer-nav li:hover{
     background-color: black;
     color: lightslategray;
 }
@@ -90,38 +254,31 @@ p a:hover{
 }
 .volver{
     background-color: black;
-    border-radius: 5px;
     color: lightslategray;
     padding: 5px;
-    font-size: 10px;
+
     font-variant: small-caps;
     text-align: center;
     display: block;
     width:fit-content ;     /* Ancho fijo para que el margen automático funcione */
     margin: auto;     /* Centra horizontalmente */
+    border-radius: 5px;
 }
 .volver:hover{
-    background-color: #333;
+    background-color: rgb(61, 66, 71);
     color: black;
 }
 .copyright{
     text-align: right;
     font-size: 12px;
-    margin-right: 10px;
 }
 footer {
     background-color:#333;
     color: #fff;
     text-align: center;
+    
 }
-.footer-nav li {
-    list-style: none;
-    padding: 5px;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 8px;
-}
+
 main{
     padding-bottom: 40px;
     padding-left: 15px;

@@ -8,17 +8,35 @@ body {
     border-right: 40px solid black;
     box-sizing: border-box;
 }
+
 .img_principal {
-    margin-top: 5%;
+    margin-top: 7%;
     display: block;
     text-align: center;
     /* Centra horizontalmente */
+    /*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
 }
+
 img {
     max-width: 100%;
     /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
     height: auto;
     /* Mantiene la proporción de la imagen */
+}
+
+
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+@media (max-width: 700px) {
+    p {
+        font-size: 12px;
+        /* Reduce el tamaño de la fuente */
+    }
+    .ejemplosPlay>ul>li{
+        font-size: 10px;
+    }
 }
 h1 {
     text-align: center;
@@ -29,51 +47,32 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+header {
+    margin-bottom: 100px;
+}
+
 h2 {
     font-size: 30px;
     font-variant: small-caps;
-    color: black;
-    text-align: left;
 }
 
 h2:target {
-    text-decoration: underline 3px solid lightslategray;
+    text-decoration: underline 4px solid lightslategray;
 }
 
-p {
-    text-align: justify;
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-a {
-    color: inherit;
-    /* Toma el color del padre */
-    text-decoration: inherit;
-    font-size: inherit;
-}
-
-p a:hover {
-    color: tomato;
-}
-
-ol {
-    margin-top: 5%;
-    padding: 0;
-    text-align: center;
-}
 
 #indice>li,
 .footer-nav li {
     display: inline-block;
-    width: 30%;
+    width: 25%;
     text-align: center;
     background-color: lightslategray;
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 17px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-variant: small-caps;
@@ -85,8 +84,20 @@ ol {
     color: lightslategray;
 }
 
+a {
+    color: inherit;
+    /*Toma el color del padre*/
+    text-decoration: inherit;
+    font-size: inherit;
+}
+
+p a:hover {
+    color: tomato;
+}
+
 .volver {
     background-color: black;
+    border-radius: 5px;
     color: lightslategray;
     padding: 5px;
     font-size: 10px;
@@ -100,53 +111,65 @@ ol {
 }
 
 .volver:hover {
-    background-color: rgb(61, 66, 71);
-    color: black;
-}
-
-main {
-    padding: 20px;
-}
-footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.footer-nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.footer-nav li {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px;
-    font-variant: small-caps;
-    font-size: 16px;
-    color: lightslategray;
-    text-decoration: none;
-    background-color: black;
-    border-radius: 5px;
-}
-
-.footer-nav li:hover {
-    background-color: lightslategray;
     color: black;
 }
-
-.social-media img {
-    margin: 5px;
-    width: 50px;
-    height: auto;
-}
-
 
 .copyright {
     text-align: right;
     font-size: 12px;
-    margin: 10px 20px;
-    color: lightgrey;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-nav li {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main {
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.conjuntoPlay {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.conjuntoPlay>p {
+    display: inline-block;
+    width: 70%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.conjuntoPlay>picture {
+    display: inline-block;
+    width: 29%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
+
+#ejemplosPlay {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-top: 50px;
 }

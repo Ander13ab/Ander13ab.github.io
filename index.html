@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="estilo.css">
     <meta name="robots" content="index,follow"><!--Es para que los robots indexen y encuentren la pagina-->
     <!--las keywords no sirven para nada-->
+    <script src="ruta1.js"></script>
     <meta name="description"
         content="Conoce todo acerca de emuladores para tus juegos favoritos tanto para juegos retro como para títulos de nuevas consolas, de forma legal y con poco uso de recursos">
     <link rel="canonical" href="https://ander13ab.github.io">
@@ -32,7 +33,7 @@
                 <iframe src="https://www.youtube.com/embed/LcBjBJ1Nra0?si=rJ0O0N-jwW3kfXu9"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen > 
                 </iframe>
                 <iframe src="https://www.youtube.com/embed/X81Zlmmjek8?si=gWvrRf2P70OUbTQ1"
                     title="YouTube video player" frameborder="0"
@@ -45,12 +46,13 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
-            
+            <!--
             <nav>
                 <ol id="indice">
                     <li><a href="#queEmular">Consolas para emular</a></li><li><a href="#playstation">PlayStation</a></li><li><a href="#nintendo">Nintendo</a></li><li><a href="#sega">Sega</a></li>
                 </ol>
             </nav>
+            -->
         </div>
         <form action="#">
             <input type="checkbox" name="lista" id="lista">
@@ -58,10 +60,10 @@
             <nav>
                 <ol>
                     <li><a href="https://ander13ab.github.io">Inicio</a></li>
-                    <li>Nosotros</li>
-                    <li>Enlaces</li>
-                    <li>PlayStation</li>
-                    <li>Página Valentín</li>
+                    <li><a href="https://ander13ab.github.io/nosotros">Nosotros</a></li>
+                    <li><a href="https://ander13ab.github.io/enlaces">Enlaces</a></li>
+                    <li><a href="https://ander13ab.github.io/PlayStation">PlayStation</a></li>
+                    <li><a href="https://profevalentinperez.github.io/">Página Valentín</a></li>
                 </ol>
             </nav>
         </form>
@@ -72,8 +74,8 @@
             <div class="conjuntoIntro">
                 <p>Aquí encontrarás que consolas podrás emular y los métodos que hay, de forma segura y sin necesidad de descargar una gran cantidad de software. Podrás jugar a todos los juegos de tu infancia favoritos y tendrás la posibilidad de almacenarlos todos tanto en tu PC, como un tu consola de nueva generación. De esa forma consegirás jugar a todos tus títulos descargados desde cualquier lugar en el que te encuentres. <br><br>Si eres nuevo en esto y quieres saber qué es eso de emular y por qué bastante gente se decanta por el uso de estos software, aqui te lo explicamos: <br><br>La emulación es el proceso mediante el cual se utiliza un software para replicar el hardware y funcionamiento de una consola de videojuegos en una computadora, dispositivo móvil u otra consola. Esta técnica permite ejecutar juegos diseñados para sistemas antiguos o modernos sin necesidad de poseer el hardware original. Hoy en día, prácticamente cualquier consola puede ser emulada, desde las clásicas hasta las modernas</p>
                 <picture id="imagen_emular">
-                    <source srcset="imagenes/imagen_emular.gif" media="(max-width:2896px) and (min-width:699px)">
-                    <source srcset="imagenes/imagen_emular_2.gif" media="(max-width:700px)  and (min-width:50px)">
+                    <source srcset="imagenes/imagen_emular.gif" media="(min-width:801px)">
+                    <source srcset="imagenes/imagen_emular.gif" width="80px" media="(max-width:800px)" >
                     <img src="imagenes/imagen_emular.gif" alt="GIF imagen de consolas para emular" width="200px" height="150px">
                 </picture>
             </div>
@@ -83,16 +85,13 @@
             <h2 id="playstation">PlayStation</h2>
             <div class="conjuntoPlay">
                 <p>PlayStation es una marca de consolas de videojuegos creada por Sony en 1994. Su primera consola, la PlayStation original, revolucionó el mercado al popularizar los juegos en CD y llevar los gráficos en 3D a las masas. Desde entonces, Sony ha lanzado varias generaciones: PlayStation 2, la consola más vendida de la historia; PlayStation 3, con su potente procesador y capacidad de Blu-ray; PlayStation 4, que impulsó el juego en línea y las redes sociales; y la PlayStation 5, que ofrece gráficos avanzados, tiempos de carga ultrarrápidos y retrocompatibilidad. PlayStation también es conocida por sus franquicias exclusivas como Uncharted, The Last of Us, God of War, y Gran Turismo, y ha consolidado su posición como una de las plataformas de videojuegos más influyentes del mundo.</p>
-                <picture>
-                    <a href="https://www.playstation.com/es-es/" target="_blank" title="Enlace web a la página de PlayStation"><img src="imagenes/logo_Playstation.webp" alt="Logo PlayStation" width="150" height="150"></a>
-                </picture>
-                <picture id="imagen_emular">
-                    <a href="https://www.playstation.com/es-es/" target="_blank" title="Enlace web a la página de PlayStation">
-                    <source srcset="imagenes/logo_Playstation.webp"  media="(max-width:2896px) and (min-width:699px)">
-                    <source srcset="imagenes/logo_Playstation_2.webp" media="(max-width:700px)  and (min-width:50px)">
-                    <img src="imagenes/logo_Playstation.webp" alt="Logo PlayStation" width="150" height="150">
-                    </a>
-                </picture>
+                <a href="https://www.playstation.com/es-es/" title="Enlace web a la página de PlayStation" target="_blank">
+                    <picture>
+                        <source srcset="imagenes/logo_Playstation.webp" media="(min-width:801px)" />
+                        <source srcset="imagenes/logo_Playstation_2.webp" width="50px" media="(max-width:800px)" />
+                        <img src="imagenes/logo_Playstation.webp" alt="Logo PlayStation">
+                    </picture>
+                </a>
             </div>
             <div id="ejemplosPlay">
                 <p>Ahora te mostraré cuales pueden ser tus mejores opciones si tienes una PS4 y quieres ampliar tu catálogo de videojuegos: </p>
@@ -129,8 +128,14 @@
                 <p>Nintendo es una compañía japonesa de videojuegos fundada en 1889 en Kioto, inicialmente dedicada a la producción de cartas Hanafuda. A lo largo de su historia, se transformó en un gigante de la industria del entretenimiento interactivo, consolidándose como uno de los nombres más influyentes y reconocidos en el ámbito de los videojuegos. <br><br>Conocida por su enfoque en la innovación y el entretenimiento familiar, Nintendo ha creado franquicias icónicas como <em><a href="https://es.wikipedia.org/wiki/Super_Mario" target="_blank">Super Mario</a></em>, <em><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda" target="_blank">The Legend of Zelda</a></em>, <em><a href="https://es.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Pokémon</a></em> y <em><a href="https://es.wikipedia.org/wiki/Donkey_Kong_(serie)" target="_blank">Donkey Kong</a></em>. Además, ha revolucionado el mercado con consolas emblemáticas
                 como la NES, la Game Boy, la Wii y la Nintendo Switch. Su legado se basa en su capacidad para combinar creatividad,
                 tecnología y experiencias memorables que han cautivado a jugadores de todas las edades a lo largo de las décadas.</p>
-                <picture><a href="https://www.nintendo.com/es-es/" target="_blank" title="Enlace web a la página de Nintendo"><img src="imagenes/logo_Nintendo.webp" alt="Logo Nintendo" width="200" height="145"></a>
-                </picture>
+
+                <a href="https://www.nintendo.com/es-es/" title="Enlace web a la página de Nintendo" target="_blank">
+                    <picture>
+                        <source srcset="imagenes/logo_Nintendo.webp" media="(min-width:801px)" />
+                        <source srcset="imagenes/logo_Nintendo_2.webp" width="75px" media="(max-width:800px)" />
+                        <img src="imagenes/logo_Nintendo.webp" alt="Logo Nintendo">
+                    </picture>
+                </a>
             </div>
             <div id="ejemplosNintendo">
                 <p>Ahora te mostraré cuales pueden ser tus mejores opciones si tienes una nintendo switch y quieres ampliar tu catálogo de videojuegos: </p>
@@ -165,8 +170,14 @@
             <h2 id="sega">Sega</h2>
             <div class="conjuntoSega">
                 <p>SEGA es una empresa japonesa de entretenimiento y videojuegos fundada en 1960. Es conocida por desarrollar hardware de videojuegos, como consolas icónicas (Sega Genesis, Dreamcast) y por crear franquicias populares como Sonic the Hedgehog, Yakuza y Virtua Fighter. <br><br>En su historia, SEGA fue un líder influyente en la industria de las consolas, pero desde principios de los 2000, se centró en desarrollar y publicar videojuegos para múltiples plataformas tras abandonar la fabricación de hardware. También opera en otros sectores como juegos arcade y máquinas recreativas. Es una de las empresas más reconocidas en la historia de los videojuegos por su innovación y legado. Sega es el mayor desarrollador de juegos de arcade del mundo, con más de 500 juegos, 76 franquicias y 23 placas de sistemas arcade desde 1981, e inscrita en 2010 en el Libro Guinness de los récords por este hecho.</p>
-                <picture><a href="https://www.sega.com/es" target="_blank" title="Enlace web a la página de Sega"><img src="imagenes/logo_SEGA.webp" alt="Logo Sega" width="200" height="67"></a>
-                </picture>
+
+                <a href="https://www.sega.com/es" title="Enlace web a la página de Sega" target="_blank">
+                    <picture>
+                        <source srcset="imagenes/logo_SEGA.webp" media="(min-width:801px)" />
+                        <source srcset="imagenes/logo_SEGA_2.webp" width="75px" media="(max-width:800px)" />
+                        <img src="imagenes/logo_SEGA.webp" alt="Logo Sega">
+                    </picture>
+                </a>
             </div>
             <div>
                 <h3><a href="https://kega-fusion.com/" target="_blank" title="Ve a la página oficial de Kega Fusion">1. Kega Fusion</a></h3>
@@ -199,18 +210,27 @@
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://www.facebook.com/dialog/share?display=popup&app_id=94039431626&href=https://ander13ab.github.io" aria-label="Facebook"><img src="imagenes/facebook-logo.webp" alt="Facebook" width="100" height="63">
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+                    <picture>
+                        <source srcset="imagenes/facebook-logo.webp" media="(min-width:721px)" />
+                        <source srcset="imagenes/facebook-logo.webp" width="50px" media="(max-width:720px)" />
+                        <img src="imagenes/facebook-logo.webp" alt="Logo Facebook">
+                    </picture>
                 </a>
-                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="imagenes/instagram-logo.webp" alt="Instagram" width="100" height="56">
-                </a>
-                <picture >
-                    <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
-                        <source srcset="imagenes/instagram-logo.webp" media="(min-width:721px)" alt="Logo Instagram">
-                        <source srcset="imagenes/instagram-logo-2.webp" media="(max-width:720px)" />
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
+                    <picture >
+                        <source srcset="imagenes/instagram-logo.webp" media="(min-width:721px)" />
+                        <source srcset="imagenes/instagram-logo.webp" width="50px" media="(max-width:720px)" />
                         <img src="imagenes/instagram-logo.webp" alt="Logo Instagram">
-                    </a>
-                </picture>
-                <a href="https://x.com/" aria-label="Twitter"><img src="imagenes/twitter-logo.webp" alt="Twitter" width="60" height="61"></a>
+                    </picture>
+                </a>
+                <a href="https://x.com/" aria-label="Twitter" target="_blank">
+                    <picture>
+                        <source srcset="imagenes/twitter-logo.webp" media="(min-width:721px)" />
+                        <source srcset="imagenes/twitter-logo.webp" width="30px" media="(max-width:720px)" />
+                        <img src="imagenes/twitter-logo.webp" alt="Logo Twitter">
+                    </picture>
+                </a>
             </div>
             <p class="copyright">&copy; 2024 Anderson Avellaneda | CDM FP</p>
         </div>

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "InfoPlayStation",
+                "name": "ConsolasPlayStation",
                 "item": "https://ander13ab.github.io/PlayStation/PlayStation_2"
             }
         ]

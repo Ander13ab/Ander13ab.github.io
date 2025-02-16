@@ -1,6 +1,6 @@
 body {
     background-color: darkgrey;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 }
 
 .img_principal {
-    margin-top: 7%;
+    margin-top: 10%;
     display: block;
     text-align: center;
     /* Centra horizontalmente */
@@ -29,7 +29,53 @@ p {
     text-align: justify;
     font-size: 20px;
 }
-@media (max-width: 700px) {
+
+@media(max-width:3000px) {
+    .volver {
+            font-size: 10px;
+        }
+    #miguitas {
+        position: absolute;
+        top: 100px;
+        left: 60px;
+        margin: 0 auto;
+        display: flex;
+        height: 30px;
+        width: 170px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #miguitas p {
+        margin: 0;
+        height: 29px;
+        width: 30px;
+        font-size: 14px;
+        color: #333;
+    }
+    #miguitas p:nth-of-type(1) {
+        flex-shrink: 1;
+        
+    }
+    #miguitas p:nth-of-type(2) {
+        flex-shrink: 2;
+        text-align: center;
+
+    }
+    #miguitas p:nth-of-type(3) {
+        flex-grow: 1;
+
+    }
+    #miguitas p a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+}
+@media (max-width: 800px) {
+    body{
+        border-left: 20PX solid black;
+        border-right: 20px solid black;
+    }
     p {
         font-size: 12px;
         /* Reduce el tamaño de la fuente */
@@ -37,7 +83,54 @@ p {
     .ejemplosPlay>ul>li{
         font-size: 10px;
     }
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    
+    }
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+    li {
+        font-size: 10px;
+    }
+    .footer-nav li {
+        font-size: 10px;
+    }
+
+    .volver {
+        font-size: 6px;
+    }
+    #miguitas {
+        position: absolute;
+        top: 200px;
+        left: 60px;
+        margin: 0 auto;
+        display: flex;
+        height: 30px;
+        width: 170px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #miguitas p {
+        margin: 0;
+        height: 29px;
+        width: 30px;
+        font-size: 7px;
+        color: #333;
+    }
 }
+
 h1 {
     text-align: center;
     margin: 0;
@@ -62,23 +155,34 @@ h2:target {
 }
 
 
-#indice>li,
 .footer-nav li {
     display: inline-block;
+    list-style: none;
     width: 25%;
+    height: 100%;
     text-align: center;
     background-color: lightslategray;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 17px;
     margin-top: 40px;
     padding-top: 15px;
+    margin-right: 15px;
     padding-bottom: 15px;
     font-variant: small-caps;
+    border-right: 3px solid black;
+    border-left: 3px solid white;
+    border-radius: 30px 2px 30px 2px;
+}
+.footer-nav li {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px 0 10px 0;
 }
 
-#indice>li:hover,
 .footer-nav li:hover {
     background-color: black;
     color: lightslategray;
@@ -100,7 +204,6 @@ p a:hover {
     border-radius: 5px;
     color: lightslategray;
     padding: 5px;
-    font-size: 10px;
     font-variant: small-caps;
     text-align: center;
     display: block;
@@ -127,14 +230,6 @@ footer {
     text-align: center;
 }
 
-.footer-nav li {
-    list-style: none;
-    padding: 5px;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 8px;
-}
 
 main {
     padding-bottom: 40px;

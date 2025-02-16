@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="estilo.css">
     <meta name="robots" content="index,follow"><!--Es para que los robots indexen y encuentren la pagina-->
     <!--las keywords no sirven para nada-->
+    <script src="ruta2.js"></script>
     <meta name="description"
         content="Conoce todo acerca de emuladores para tus juegos favoritos tanto para juegos retro como para títulos de nuevas consolas, de forma legal y con poco uso de recursos, en consolas de PlayStation">
     <link rel="canonical" href="https://ander13ab.github.io/PlayStation">
@@ -24,11 +25,14 @@
     <header>
         <div>
             <h1 id="titulo">Conoce toda la información de los emuladores para juegos</h1>
+            <div id="miguitas">
+                <p><a href="https://ander13ab.github.io">Inicio</a></p><p> > </p><p><a href="https://ander13ab.github.io/PlayStation">PlayStation 1</a></p>
+            </div>
             <picture class="img_principal">
-                <source srcset="../imagenes/primera_imagen.webp" media="(min-width:721px)"
+                <source srcset="../imagenes/primera_imagen.webp" media="(min-width:801px)"
                     alt="Consolas retro que puedes emular " width="460" height="259">
                 <!---Para ajustar el tamaño de las imagenes pensando en dispositivos móviles--->
-                <source srcset="../imagenes/primera_imagen_2.webp" media="(max-width:720px)" />
+                <source srcset="../imagenes/primera_imagen_2.webp" media="(max-width:800px)" />
                 <img src="../imagenes/primera_imagen.webp" alt="Imagen página principal">
             </picture>
            
@@ -102,13 +106,27 @@
                 </ul>
             </nav>
             <div>
-                <a href="https://www.facebook.com/dialog/share?display=popup&app_id=94039431626&href=https://ander13ab.github.io"
-                    aria-label="Facebook"><img src="../imagenes/facebook-logo.webp" alt="Facebook" width="100"
-                        height="63"></a>
-                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="../imagenes/instagram-logo.webp"
-                        alt="Instagram" width="100" height="56"></a>
-                <a href="https://x.com/" aria-label="Twitter"><img src="../imagenes/twitter-logo.webp" alt="Twitter"
-                        width="60" height="61"></a>
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+                    <picture>
+                        <source srcset="../imagenes/facebook-logo.webp" media="(min-width:721px)" />
+                        <source srcset="../imagenes/facebook-logo.webp" width="50px" media="(max-width:720px)" />
+                        <img src="../imagenes/facebook-logo.webp" alt="Logo Facebook">
+                    </picture>
+                </a>
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
+                    <picture>
+                        <source srcset="../imagenes/instagram-logo.webp" media="(min-width:721px)" />
+                        <source srcset="../imagenes/instagram-logo.webp" width="50px" media="(max-width:720px)" />
+                        <img src="../imagenes/instagram-logo.webp" alt="Logo Instagram">
+                    </picture>
+                </a>
+                <a href="https://x.com/" aria-label="Twitter" target="_blank">
+                    <picture>
+                        <source srcset="../imagenes/twitter-logo.webp" media="(min-width:721px)" />
+                        <source srcset="../imagenes/twitter-logo.webp" width="30px" media="(max-width:720px)" />
+                        <img src="../imagenes/twitter-logo.webp" alt="Logo Twitter">
+                    </picture>
+                </a>
             </div>
             <p class="copyright">&copy; 2025 Anderson Avellaneda | CDM FP</p>
         </div>

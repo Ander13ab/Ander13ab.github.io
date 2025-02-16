@@ -1,0 +1,250 @@
+body {
+    background-color: darkgrey;
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-left: 40px solid black;
+    border-right: 40px solid black;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    /*Toma el color del padre*/
+    text-decoration: inherit;
+    font-size: inherit;
+}
+/*HEADER*/
+h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: black;
+    color: lightslategrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.img_principal {
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+    margin-bottom: 100px;
+}
+/*------BREADCRUMBS-------*/
+
+
+#miguitas p a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/*------BREADCRUMBS-------*/
+
+/*HEADER*/
+
+/*MAIN*/
+
+main {
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+h2 {
+    font-variant: small-caps;
+    text-decoration: underline overline;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+article>picture{
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+/*FOOTER*/
+.footer-nav li {
+    display: inline-block;
+    list-style: none;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    background-color: lightslategray;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    font-variant: small-caps;
+    border-right: 3px solid black;
+    border-left: 3px solid white;
+    border-radius: 30px 2px 30px 2px;
+}
+
+.footer-nav li:hover {
+    background-color: black;
+    color: lightslategray;
+}
+.copyright {
+    text-align: right;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+@media(max-width:3000px) {
+    /*------BREADCRUMBS-------*/
+    #miguitas {
+        position: absolute;
+        top: 100px;
+        left: 60px;
+        margin: 0 auto;
+        display: flex;
+        height: 30px;
+        width: 300px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #miguitas p {
+        margin: 0;
+        height: 29px;
+        width: 30px;
+        font-size: 16px;
+        color: #333;
+    }
+    #miguitas p:nth-of-type(1) {
+        flex-shrink: 1;
+    }
+
+    #miguitas p:nth-of-type(2) {
+        flex-shrink: 2;
+        text-align: center;
+        margin-right: 3px;
+    }
+
+    #miguitas p:nth-of-type(3) {
+        flex-shrink: 2;
+        flex-grow: 1;
+    }
+
+    #miguitas p:nth-of-type(4) {
+        flex-shrink: 2;
+        text-align: left;
+    }
+
+    #miguitas p:nth-of-type(5) {
+        flex-grow: 1;
+    }
+    /*------BREADCRUMBS-------*/
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .footer-nav li {
+        font-size: 10px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    body {
+        border-left: 14PX solid black;
+        border-right: 14px solid black;
+    }
+
+    /*------BREADCRUMBS-------*/
+    #miguitas {
+        position: absolute;
+        top: 200px;
+        left: 60px;
+        margin: 0 auto;
+        display: flex;
+        height: 30px;
+        width: 170px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #miguitas p {
+        margin: 0;
+        height: 15px;
+        width: 20px;
+        font-size: 9px;
+        color: #333;
+    }
+    #miguitas p:nth-of-type(1) {
+        flex-shrink: 1;
+    }
+
+    #miguitas p:nth-of-type(2) {
+        flex-shrink: 2;
+        text-align: center;
+        margin-right: 3px;
+    }
+
+    #miguitas p:nth-of-type(3) {
+        flex-grow: 1;
+    }
+
+    #miguitas p:nth-of-type(4) {
+        flex-shrink: 2;
+        text-align: left;
+    }
+
+    #miguitas p:nth-of-type(5) {
+        flex-grow: 1;
+    }
+    /*------BREADCRUMBS-------*/
+
+}

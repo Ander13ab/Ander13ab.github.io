@@ -31,6 +31,9 @@ p {
 }
 
 @media(max-width:3000px) {
+    h2{
+        font-size: 30px;
+    }
     .volver {
             font-size: 10px;
         }
@@ -66,19 +69,57 @@ p {
         flex-grow: 1;
 
     }
-    #miguitas p a:hover {
-        color: black;
-        text-decoration: underline;
+    
+    .conjuntoPlay {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        align-items: center;
     }
+  
+    .conjuntoPlay>p {
+        display: inline-block;
+        width: 70%;
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
+    .conjuntoPlay>picture {
+        display: inline-block;
+        width: 29%;
+        box-sizing: border-box;
+        margin: 55px;
+        text-align: center;
+        align-items: center;
+    }
+         
 }
 @media (max-width: 800px) {
     body{
-        border-left: 20PX solid black;
-        border-right: 20px solid black;
+        border-left: 14PX solid black;
+        border-right: 14px solid black;
     }
     p {
         font-size: 12px;
         /* Reduce el tamaño de la fuente */
+    }
+    /**/
+    .conjuntoPlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-bottom: 30px;
+    }
+    .conjuntoPlay>p {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .conjuntoPlay>picture {
+        width: 90%;
     }
     .ejemplosPlay>ul>li{
         font-size: 10px;
@@ -89,7 +130,8 @@ p {
     
     }
     h2 {
-        font-size: 16px;
+        font-size: 22px;
+        text-align: center;
     }
 
     h3 {
@@ -124,10 +166,22 @@ p {
     
     #miguitas p {
         margin: 0;
-        height: 29px;
-        width: 30px;
+        height: 15px;
+        width: 20px;
         font-size: 7px;
         color: #333;
+    }
+    #miguitas p:nth-of-type(1) {
+        flex-shrink: 1;
+    }
+
+    #miguitas p:nth-of-type(2) {
+        flex-shrink: 2;
+        text-align: center;
+    }
+
+    #miguitas p:nth-of-type(3) {
+        flex-grow: 1;
     }
 }
 
@@ -144,10 +198,27 @@ h1 {
 header {
     margin-bottom: 100px;
 }
+/*------BREADCRUMBS-------*/
+#miguitas p:nth-of-type(1) {
+    flex-shrink: 1;
+}
 
+#miguitas p:nth-of-type(2) {
+    flex-shrink: 2;
+    text-align: center;
+}
+
+#miguitas p:nth-of-type(3) {
+    flex-grow: 1;
+}
+#miguitas p a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*------BREADCRUMBS-------*/
 h2 {
-    font-size: 30px;
     font-variant: small-caps;
+    text-decoration: underline;
 }
 
 h2:target {
@@ -166,6 +237,7 @@ h2:target {
     color: black;
     font-weight: bold;
     margin-top: 40px;
+    margin-bottom: 20px;
     padding-top: 15px;
     margin-right: 15px;
     padding-bottom: 15px;
@@ -173,14 +245,6 @@ h2:target {
     border-right: 3px solid black;
     border-left: 3px solid white;
     border-radius: 30px 2px 30px 2px;
-}
-.footer-nav li {
-    list-style: none;
-    padding: 5px;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 10px 0 10px 0;
 }
 
 .footer-nav li:hover {
@@ -198,7 +262,7 @@ a {
 p a:hover {
     color: tomato;
 }
-
+/*----BOTÓN VOLVER------*/
 .volver {
     background-color: black;
     border-radius: 5px;
@@ -217,7 +281,7 @@ p a:hover {
     background-color: #333;
     color: black;
 }
-
+/*----BOTÓN VOLVER------*/
 .copyright {
     text-align: right;
     font-size: 12px;
@@ -235,27 +299,6 @@ main {
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.conjuntoPlay {
-    display: block;
-    margin-bottom: 30px;
-}
-
-.conjuntoPlay>p {
-    display: inline-block;
-    width: 70%;
-    box-sizing: border-box;
-    margin: 0;
-    margin-bottom: 15px;
-}
-
-.conjuntoPlay>picture {
-    display: inline-block;
-    width: 29%;
-    box-sizing: border-box;
-    margin: 0;
-    text-align: center;
 }
 
 #ejemplosPlay {

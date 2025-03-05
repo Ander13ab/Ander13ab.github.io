@@ -26,7 +26,8 @@
             <h1 id="titulo">Conoce toda la información de los emuladores para juegos</h1>
             <picture class="img_principal">
                     <source srcset="imagenes/primera_imagen.webp"  media="(min-width:721px)" alt="Consolas retro que puedes emular " width="460" height="259"> <!---Para ajustar el tamaño de las imagenes pensando en dispositivos móviles--->
-                    <source srcset="imagenes/primera_imagen_2.webp" media="(max-width:720px)" />
+                    <source srcset="imagenes/primera_imagen_2.webp" media="(min-width:451px)" media="(max-width:720px)" width="250" height="184"/>
+                    <source srcset="imagenes/primera_imagen_2.webp" media="(max-width:450px)" width="150" height="84"/>
                     <img src="imagenes/primera_imagen.webp" alt="Imagen página principal">
             </picture>
             <div id="videos">
@@ -46,13 +47,7 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
-            <!--
-            <nav>
-                <ol id="indice">
-                    <li><a href="#queEmular">Consolas para emular</a></li><li><a href="#playstation">PlayStation</a></li><li><a href="#nintendo">Nintendo</a></li><li><a href="#sega">Sega</a></li>
-                </ol>
-            </nav>
-            -->
+            
         </div>
         <form action="#">
             <input type="checkbox" name="lista" id="lista">

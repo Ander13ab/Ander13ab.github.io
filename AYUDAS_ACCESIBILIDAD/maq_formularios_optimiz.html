@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Chokokutai&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="maq_formularios_optimiz.css">
+    <title>Maquetación formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Estudiantes por el mundo</h1>
+        <nav>
+            <ol>
+                <li><a href="#personales">Datos personales</a></li><li><a href="#edades">Edades</a></li><li><a href="#contacto">Datos de contacto</a></li><li><a href="#ciudades">Ciudades</a></li><li><a href="#otros">Otros</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <form action="#">
+            <fieldset id="personales">
+                <legend>Datos personales</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Su nombre aquí" required><span></span>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Su apellido aquí" required><span></span>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad" required><span></span>
+                <optgroup label="europea"><!--Optgroup para agrupar valores entre si, dentro del select -->
+                    <option value="españa">Española</option> 
+                    <option value="francia">Francesa</option>
+                    <option value="alemania">Alemana</option>
+                </optgroup>
+                <optgroup label="americana"> 
+                    <option value="Canada">Canadiense</option> 
+                    <option value="Mexico">Mexicana</option>
+                </optgroup>
+            </select>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required><span></span>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="*******" required><span></span>
+            </fieldset>
+            <fieldset id="edades">
+                <legend>Grupo de edad</legend>
+            <input type="radio" name="edad" id="joven" value="joven" required>
+            <label for="joven">menos de 20</label>
+            <input type="radio" name="edad" id="adulto" value="adulto" required>
+            <label for="adulto">entre 20 y 50</label>
+            <input type="radio" name="edad" id="prejubilado" value="prejubilado" required>
+            <label for="prejubilado">entre 50 y 60</label>
+            <input type="radio" name="edad" id="jubilado" value="jubilado" required>
+            <label for="jubilado">más de 60</label>
+            </fieldset>
+            <fieldset id="contacto">
+                <legend>Datos de contacto</legend>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Por ejemplo usuario@dominio.es" required><span></span>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="612345678">
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="direccion" name="direccion" placeholder="Su dirección aquí" required><span></span>
+            <label for="cp">Código postal: </label>
+            <input type="text" id="cp" name="cp" placeholder="Su código postal aquí" required><span></span>
+            <label for="ciudad">Ciudad:</label>
+            <select name="ciudad" id="ciudad" size="3" required><span></span>
+                <option value="madrid">madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+            </select>
+            </fieldset>
+            <fieldset id="ciudades">
+                <legend>Ciudades que qurría visitar</legend>
+            <input type="checkbox" name="ciudad1" id="ciudad1" required>
+            <label for="ciudad1" class="ciudades">Berlín</label>
+            <input type="checkbox" name="ciudad2" id="ciudad2" required>
+            <label for="ciudad2" class="ciudades">Alcorcón</label>
+            <input type="checkbox" name="ciudad3" id="ciudad3" required>
+            <label for="ciudad3" class="ciudades">Moscú</label>
+            <input type="checkbox" name="ciudad4" id="ciudad4" required>
+            <label for="ciudad4" class="ciudades">San Francisco</label>
+            <input type="checkbox" name="ciudad5" id="ciudad5" required>
+            <label for="ciudad5" class="ciudades">Nueva York</label>
+            <input type="checkbox" name="ciudad6" id="ciudad6" required>
+            <label for="ciudad6" class="ciudades">París</label>
+            <input type="checkbox" name="ciudad7" id="ciudad7" required>
+            <label for="ciudad7" class="ciudades">Milán</label>
+            <input type="checkbox" name="ciudad8" id="ciudad8" required>
+            <label for="ciudad8" class="ciudades">Londres</label>
+            </fieldset>
+            <fieldset id="otros">
+                <legend>Otros datos</legend>
+            <label for="file">Subir fotografía: </label>
+            <input type="file" id="file" name="file" required><span></span>
+            <label for="numero">Número favorito: </label>
+            <input type="text" id="numero" name="numero" placeholder="1" required><span></span>
+            <label for="color">Color favorito: </label>
+            <input type="color" id="color" name="color" required>
+            <label for="presupuesto">Presupuesto: </label>
+            500€<input type="range" id="presupuesto" name="salario" min="500" max="1500" step="100" required>1500<span></span>
+            <label for="instagram">Instagram: </label>
+            <input type="text" id="instagram" name="instagram" placeholder="https://www.instagram.com/usuario" required><span></span>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" placeholder="Aprovecha esta caja para contarnos tu vida si te aburres" cols="50" rows="6"     required></textarea><span></span>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <button aria-label="Salir de la página">X</button><!--Aria-label: Para ponerle una etiqueta a un elemento que no se puede poner label-->
+            </fieldset>
+            <fieldset>
+                <p><a href="pepe.html" aria-label="Accede a la página de información bursátil">Ver más</a></p>
+
+                <p><a href="pepe.html" >Ver más <span>Accede a la página de información bursátil</span></a></p>
+
+                <!--Para que solo se lea por un lector de texto, se puede añadir un aria-label o darle un font-size: 0 al span  -->
+            </fieldset>
+        </form>
+    </main>
+    <body>
+        
+    </body>
+</body>
+</html>

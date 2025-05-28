@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegacion</title>
+    <style>
+        p:nth-child(1){
+            position: absolute;
+            bottom: 10px;
+            color: red;
+        }
+        button:nth-child(1){
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: black;
+            padding: 10px;
+        }
+        span{
+            display: block;
+            height: 3px;
+            background-color: white;
+        }
+        nav{
+            display: none;
+        }
+        
+    </style>
+    <script>
+        window.onload=function(){  /*Para ver si se a cargado correctamente el DOM y lo metemos en un boton*/
+            boton.onclick=menu;
+        }
+        
+        function menu(){ /*Llamamos a la función*/
+            
+            if(navegacion.style.display=="block"){
+                navegacion.style.display="none";
+                boton.setAttribute("aria-expanded","false");
+                
+            }else{
+                navegacion.style.display="block";
+                boton.setAttribute("aria-expanded","true");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="boton" aria-expanded="false"><!--Aria-expanded para ver si nav está desplegado o no-->
+        <span></span><span></span>
+    </button>
+    <nav id="navegacion">
+        <ol>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+            <li>cuatro</li>
+        </ol>
+    </nav>
+
+    <p><a href="#">Enlace 1</a></p>
+    <span aria-live="off" id="contador">0</span>
+    <button tabindex="0" role="button" aria-label="Abre una ventana modal">BOTÓN</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga non officiis ducimus sapiente in unde magnam voluptatibus molestiae facere.</p>
+    <p><a href="#">Enlace 2</a></p>
+    <p><a href="#">Enlace 3</a></p>
+</body>
+</html>

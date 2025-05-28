@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        span{
+            font-size: 0;
+        }
+        div span{
+            height: 30px;
+            display: block;
+        }
+        div span:nth-child(1){
+            background-color: red;
+            width: 90px;
+        }
+        div span:nth-child(2){
+            background-color: blue;
+            width: 63px;
+        }div span:nth-child(3){
+            background-color: orange;
+            width: 20px;
+        }
+        div span:nth-child(4){
+            background-color: green;
+            width: 120px;
+        }
+        div span:nth-child(5){
+            background-color: yellow;
+            width: 10px;
+        }
+        p#descripcion{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div role="banner">
+        <h1>Hola, mundo</h1>
+    </div>
+    <header role="banner">
+        <h1 lang="en">Hello, world</h1>
+    </header>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ol>
+                        <li>Articulo 1</li>
+                        <li>Articulo 2</li>
+                        <li>Articulo 3</li>
+                        <li>Articulo 4</li>
+                    </ol>
+                </nav>
+            </header>
+        </section>
+        <section>
+            <form action="">
+                <label for="nacionalidad">Nacionalidad:</label>
+                <select name="nacionalidad" id="nacionalidad" required><span></span>
+                    <optgroup label="europea"><!--Optgroup para agrupar valores entre si, dentro del select -->
+                        <option value="españa">Española</option> 
+                        <option value="francia">Francesa</option>
+                        <option value="alemania">Alemana</option>
+                    </optgroup>
+                    <optgroup label="americana"> 
+                        <option value="Canada">Canadiense</option> 
+                        <option value="Mexico">Mexicana</option>
+                    </optgroup>
+                </select>
+                </section>
+                <section>
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad" size="3" required><span></span>
+                    <optgroup label="Europa">
+                        <option value="madrid">madrid</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="valencia">Valencia</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="madrid">madrid</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="valencia">Valencia</option>
+                    </optgroup>
+                </select>
+            </section>
+            <section>
+                <input type="image" alt="Envía el formulario y genial" src="imagenes/imagen_emular.gif" width="150px">
+            </section>
+        </form>
+        <article>
+            <p><a href="#">Ver más <span>sobre Accesibiladad web</span></a></p>
+            <p aria-hidden="true">Esto es un texto que la tecnología no va a ver</p>
+        </article>
+        <article>
+            <div role="img" aria-labelledby="descripcion">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p id="descripcion"> Gráfico de barras con 70% de aprobados, 10% suspensos, 40% sobresalientes, y más cosas</p>
+            <p id="descripcion" aria-hidden="true"> Gráfico de barras con 70% de aprobados, 10% suspensos, 40% sobresalientes, y más cosas</p>
+            <!--En la primera opción desde css lo ocultamos con display: none y en la segunda si lo podemos ver, pero con el aria-hidden lo oculta en el dom-->
+        </article>
+        <article>
+            <p><a href="#" aria-label="Accede a la página de play"><img src="imagenes/logo_Playstation.webp" alt="Logo de Playstation">ver más</a></p>
+        </article>
+        <article>
+            <p id="texto">Resultados de los exámenes de DAM</p>
+            <p id="pdf"><a href="#" aria-labelledby="texto pdf">PDF</a></p>
+            <p id="excel"><a href="#" aria-labelledby="texto excel">EXCEL</a></p>
+            <p id="word"><a href="#" aria-labelledby="texto word">WORD</a></p>
+        </article>
+        <article>
+            <table>
+                <tr>
+                    <th scope="col">a</th>
+                    <th scope="col">b</th>
+                    <th scope="col">c</th>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <th id="enc1">e</th>
+                    <td headers="enc1">f</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+</body>
+</html>

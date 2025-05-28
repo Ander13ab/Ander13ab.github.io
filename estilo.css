@@ -58,7 +58,7 @@
         text-align: center;
     }
 
-    form li {
+    nav li {
         list-style: none;
         display: inline-block;
         background-color: #000;
@@ -76,12 +76,12 @@
         border-radius: 20px 5px 20px 5px;
     }
 
-    form li:hover {
+    nav li:hover {
         background-color: black;
         color: lightslategray;
     }
 
-    form:nth-of-type(1)>input {
+    #boton{
         display: none;
     }
     /*^^^^^^^^*/
@@ -114,6 +114,9 @@
         width: 150px;
         height: 150px;
         border-radius: 30px;
+    }
+    #boton{
+        display: none;
     }
     p{
         font-size: 15px;
@@ -171,11 +174,11 @@
         left: 10px;
     }
     /*Media-query navegación*/
-    form nav ol {
+    #navegacion nav ol {
         margin: 0;
     }
 
-    form li {
+    #navegacion li {
         list-style: none;
         display: block;
         width: 100%;
@@ -185,12 +188,12 @@
         margin-bottom: 1px;
     }
 
-    form li:hover {
+    #navegacion li:hover {
         background-color: cornflowerblue;
         color: midnightblue;
     }
 
-    form nav {
+    #navegacion nav {
         display: none;
     }
 
@@ -233,8 +236,11 @@
         height: 100px;
         border-radius: 30px;
     }
-
+    nav{
+            display: flex;
+    }
 }
+
 
 body{
     background-color: darkgrey;/*#a9a9a9*/
@@ -247,13 +253,11 @@ body{
 .img_principal{
     margin-top: 7%;
     display: block;
-    text-align: center;    /* Centra horizontalmente */
-/*  align-items: center;        Centra verticalmente */
-/*  height: 100vh;      Hace que el contenedor ocupe toda la altura de la ventana */
+    text-align: center; 
 }
 img {
-    max-width: 100%;    /* Ajusta el tamaño de la imagen para que no sea más grande que la ventana */
-    height: auto;   /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
 }
 /*
 #videos iframe{
@@ -284,6 +288,60 @@ h1{
 header{
     margin-bottom: 100px;
 }
+#boton{
+    position: absolute;
+    left: 45%;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    animation: boton 3s infinite alternate-reverse;
+}
+#boton>span{
+    position: relative;
+    top: -30%;
+    left: -20%;
+    font-size: 30px;
+}
+
+@keyframes boton {
+    0%{
+        transform-origin: 50% 50%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(0);
+    }
+    25%{
+        transform-origin: 50% 50%;
+        width: 51px;
+        height: 51px;
+        transform: rotate(1deg);
+    }
+    50%{
+        transform-origin: 50% 50%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(0);
+    }
+    75%{
+        transform-origin: 50% 50%;
+        width: 51px;
+        height: 51px;
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform-origin: 50% 50%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(0);
+    }
+}
+
+
 
 h2:target{
     text-decoration: underline 3px solid #89A2A9;/*lightslategray*/

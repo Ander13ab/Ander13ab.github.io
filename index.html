@@ -18,6 +18,23 @@
     <meta name="description"
         content="Conoce todo acerca de emuladores para tus juegos favoritos tanto para juegos retro como para títulos de nuevas consolas, de forma legal y con poco uso de recursos">
     <link rel="canonical" href="https://ander13ab.github.io">
+    <script>
+        window.onload=function(){  
+            boton.onclick=menu;
+        }
+        
+        function menu(){ 
+            
+            if(navegacion.style.display=="block"){
+                navegacion.style.display="none";
+                boton.setAttribute("aria-expanded","false");
+                
+            }else{
+                navegacion.style.display="block";
+                boton.setAttribute("aria-expanded","true");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -49,6 +66,19 @@
             </div>
             
         </div>
+        <button id="boton" aria-expanded="false">
+            <span>🎮</span>
+        </button>
+        <nav id="navegacion">
+            <ol>
+                <li><a href="https://ander13ab.github.io">Inicio</a></li>
+                <li><a href="https://ander13ab.github.io/nosotros">Nosotros</a></li>
+                <li><a href="https://ander13ab.github.io/enlaces">Enlaces</a></li>
+                <li><a href="https://ander13ab.github.io/PlayStation">PlayStation</a></li>
+                <li><a href="https://profevalentinperez.github.io/">Página Valentín</a></li>
+            </ol>
+        </nav>
+        <!--
         <form action="#">
             <input type="checkbox" name="lista" id="lista">
             <label for="lista"></label>
@@ -62,6 +92,7 @@
                 </ol>
             </nav>
         </form>
+        -->
     </header>
     <main>
         <article>

@@ -288,16 +288,24 @@ h1{
 header{
     margin-bottom: 100px;
 }
+#bloque_navegacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#navegacion{
+    width: 100%;
+}
+
 #boton{
-    position: absolute;
-    left: 45%;
     border-radius: 10px;
     width: 50px;
     height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: black;
+    background-color: #89A2A9;
     padding: 10px;
     animation: boton 3s infinite alternate-reverse;
 }

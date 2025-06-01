@@ -14,7 +14,20 @@
     <link rel="stylesheet" href="estilo.css">
     <meta name="robots" content="index,follow"><!--Es para que los robots indexen y encuentren la pagina-->
     <!--las keywords no sirven para nada-->
-    <script src="ruta1.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://ander13ab.github.io"
+                }
+            ]
+        }
+    </script>
     <meta name="description"
         content="Conoce todo acerca de emuladores para tus juegos favoritos tanto para juegos retro como para títulos de nuevas consolas, de forma legal y con poco uso de recursos">
     <link rel="canonical" href="https://ander13ab.github.io">
@@ -64,20 +77,21 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
-            
         </div>
-        <button id="boton" aria-expanded="false">
-            <span>🎮</span>
-        </button>
-        <nav id="navegacion">
-            <ol>
-                <li><a href="https://ander13ab.github.io">Inicio</a></li>
-                <li><a href="https://ander13ab.github.io/nosotros">Nosotros</a></li>
-                <li><a href="https://ander13ab.github.io/enlaces">Enlaces</a></li>
-                <li><a href="https://ander13ab.github.io/PlayStation">PlayStation</a></li>
-                <li><a href="https://profevalentinperez.github.io/">Página Valentín</a></li>
-            </ol>
-        </nav>
+        <div id="bloque_navegacion">
+            <button id="boton" aria-expanded="false">
+                <span>🎮</span>
+            </button>
+            <nav id="navegacion">
+                <ol>
+                    <li><a href="https://ander13ab.github.io">Inicio</a></li>
+                    <li><a href="https://ander13ab.github.io/nosotros">Nosotros</a></li>
+                    <li><a href="https://ander13ab.github.io/enlaces">Enlaces</a></li>
+                    <li><a href="https://ander13ab.github.io/PlayStation">PlayStation</a></li>
+                    <li><a href="https://profevalentinperez.github.io/">Página Valentín</a></li>
+                </ol>
+            </nav>
+        </div>
         <!--
         <form action="#">
             <input type="checkbox" name="lista" id="lista">
@@ -98,7 +112,7 @@
         <article>
             <h2 id="queEmular">Qué consolas podrás emular</h2>
             <div class="conjuntoIntro">
-                <p>Aquí encontrarás que consolas podrás emular y los métodos que hay, de forma segura y sin necesidad de descargar una gran cantidad de software. Podrás jugar a todos los juegos de tu infancia favoritos y tendrás la posibilidad de almacenarlos todos tanto en tu PC, como un tu consola de nueva generación. De esa forma consegirás jugar a todos tus títulos descargados desde cualquier lugar en el que te encuentres. <br><br>Si eres nuevo en esto y quieres saber qué es eso de emular y por qué bastante gente se decanta por el uso de estos software, aqui te lo explicamos: <br><br>La emulación es el proceso mediante el cual se utiliza un software para replicar el hardware y funcionamiento de una consola de videojuegos en una computadora, dispositivo móvil u otra consola. Esta técnica permite ejecutar juegos diseñados para sistemas antiguos o modernos sin necesidad de poseer el hardware original. Hoy en día, prácticamente cualquier consola puede ser emulada, desde las clásicas hasta las modernas</p>
+                <p>Aquí encontrarás que consolas podrás emular y los métodos que hay, de forma segura y sin necesidad de descargar una gran cantidad de software. Podrás jugar a todos los juegos de tu infancia favoritos y tendrás la posibilidad de almacenarlos todos tanto en tu PC, como un tu consola de nueva generación. De esa forma consegirás jugar a todos tus títulos descargados desde cualquier lugar en el que te encuentres. <br><br>Si eres nuevo en esto y quieres saber qué es eso de emular y por qué bastante gente se decanta por el uso de estos <span lang="en">software</span>, aqui te lo explicamos: <br><br>La emulación es el proceso mediante el cual se utiliza un <span lang="en">software</span> para replicar el <span lang="en">hardware</span> y funcionamiento de una consola de videojuegos en una computadora, dispositivo móvil u otra consola. Esta técnica permite ejecutar juegos diseñados para sistemas antiguos o modernos sin necesidad de poseer el <span lang="en">hardware</span> original. Hoy en día, prácticamente cualquier consola puede ser emulada, desde las clásicas hasta las modernas.</p>
                 <picture id="imagen_emular">
                     <source srcset="imagenes/imagen_emular.gif" media="(min-width:801px)">
                     <source srcset="imagenes/imagen_emular.gif" width="80px" media="(max-width:800px)" >
@@ -110,7 +124,7 @@
         <article>
             <h2 id="playstation">PlayStation</h2>
             <div class="conjuntoPlay">
-                <p>PlayStation es una marca de consolas de videojuegos creada por Sony en 1994. Su primera consola, la PlayStation original, revolucionó el mercado al popularizar los juegos en CD y llevar los gráficos en 3D a las masas. Desde entonces, Sony ha lanzado varias generaciones: PlayStation 2, la consola más vendida de la historia; PlayStation 3, con su potente procesador y capacidad de Blu-ray; PlayStation 4, que impulsó el juego en línea y las redes sociales; y la PlayStation 5, que ofrece gráficos avanzados, tiempos de carga ultrarrápidos y retrocompatibilidad. PlayStation también es conocida por sus franquicias exclusivas como Uncharted, The Last of Us, God of War, y Gran Turismo, y ha consolidado su posición como una de las plataformas de videojuegos más influyentes del mundo.</p>
+                <p>PlayStation es una marca de consolas de videojuegos creada por Sony en 1994. Su primera consola, la PlayStation original, revolucionó el mercado al popularizar los juegos en CD y llevar los gráficos en 3D a las masas. Desde entonces, Sony ha lanzado varias generaciones: PlayStation 2, la consola más vendida de la historia; PlayStation 3, con su potente procesador y capacidad de Blu-ray; PlayStation 4, que impulsó el juego en línea y las redes sociales; y la PlayStation 5, que ofrece gráficos avanzados, tiempos de carga ultrarrápidos y retrocompatibilidad. PlayStation también es conocida por sus franquicias exclusivas como <span lang="en">Uncharted, The Last of Us, God of War</span>, y Gran Turismo, y ha consolidado su posición como una de las plataformas de videojuegos más influyentes del mundo.</p>
                 <a href="https://www.playstation.com/es-es/" title="Enlace web a la página de PlayStation" target="_blank">
                     <picture>
                         <source srcset="imagenes/logo_Playstation.webp" media="(min-width:801px)" />
@@ -122,25 +136,25 @@
             <div id="ejemplosPlay">
                 <p>Ahora te mostraré cuales pueden ser tus mejores opciones si tienes una PS4 y quieres ampliar tu catálogo de videojuegos: </p>
                 <h3><a href="https://github.com/AlexAltea/orbital" target="_blank" title="Ve a la página oficial de Orbital">1. Orbital</a></h3>
-                <p>Voy a empezar hablando de Orbital, que es en realidad el primer emulador para PS4 que salió al mercado. Se trata de un proyecto que está disponible en GitHub, así que hablamos de una aplicación de código abierto. Entre las muchas opciones que incorpora, está la de cargar diferentes versiones del firmware de la consola de Sony. Así, podrás elegir el que más te convenga en función de tus necesidades. <br><br>El principal problema de esta propuesta es que su desarrollador no ofrece archivos ejecutables. Es el propio usuario el que debe compilar las distintas partes del programa para poder utilizarlo en su PC. Claramente, se trata de una opción inviable para la mayoría de los usuarios, que no disponen de los conocimientos necesarios. Ahora bien, si sabes cuáles son los pasos a seguir, sin duda merece la pena intentarlo.</p>
+                <p>Voy a empezar hablando de Orbital, que es en realidad el primer emulador para PS4 que salió al mercado. Se trata de un proyecto que está disponible en GitHub, así que hablamos de una aplicación de código abierto. Entre las muchas opciones que incorpora, está la de cargar diferentes versiones del <span lang="en">firmware</span> de la consola de Sony. Así, podrás elegir el que más te convenga en función de tus necesidades. <br><br>El principal problema de esta propuesta es que su desarrollador no ofrece archivos ejecutables. Es el propio usuario el que debe compilar las distintas partes del programa para poder utilizarlo en su PC. Claramente, se trata de una opción inviable para la mayoría de los usuarios, que no disponen de los conocimientos necesarios. Ahora bien, si sabes cuáles son los pasos a seguir, sin duda merece la pena intentarlo.</p>
                 <h4>Características:</h4>
                 <ul>
-                    <li>Actualmente, está diseñado para ejecutarse en sistemas operativos Linux y Windows de 64 bits, pero con configuraciones específicas y hardware robusto</li>
-                    <li>Emula la arquitectura x86-64 de la PS4 a nivel de hardware, lo que lo hace extremadamente complejo y lento en esta etapa de desarrollo.</li>
-                    <li>Requiere que los usuarios descarguen y extraigan el firmware oficial de PS4 por sí mismos, lo cual es técnicamente complicado y, en algunos casos, puede estar en un área gris legal.</li>
+                    <li>Actualmente, está diseñado para ejecutarse en sistemas operativos Linux y Windows de 64 bits, pero con configuraciones específicas y <span lang="en">hardware</span> robusto</li>
+                    <li>Emula la arquitectura x86-64 de la PS4 a nivel de <span lang="en">hardware</span>, lo que lo hace extremadamente complejo y lento en esta etapa de desarrollo.</li>
+                    <li>Requiere que los usuarios descarguen y extraigan el <span lang="en">firmware</span> oficial de PS4 por sí mismos, lo cual es técnicamente complicado y, en algunos casos, puede estar en un área gris legal.</li>
                     <li>El proyecto es de código abierto y está alojado en GitHub, permitiendo que la comunidad contribuya al desarrollo y que los desarrolladores interesados puedan estudiar su funcionamiento.</li>
                     <li>No tiene interfaz gráfica de usuario (GUI) avanzada, lo que significa que la configuración y el uso del emulador suelen requerir comandos de línea y experiencia técnica.</li>
                 </ul>
                 <h3><a href="https://www.retroarch.com/" target="_blank" title="Ve a la página oficial de RetroArch">2. RetroArch</a></h3>
-                <p>RetroArch es un programa gratuito y de código abierto que funciona como un front-end para la API de libretro, diseñado para ejecutar emuladores, motores de juego, videojuegos y otras aplicaciones llamadas "cores". Es multiplataforma, ligero y portátil, con licencia GNU GPLv3.
+                <p>RetroArch es un programa gratuito y de código abierto que funciona como un <span lang="en">front-end</span> para la API de libretro, diseñado para ejecutar emuladores, motores de juego, videojuegos y otras aplicaciones llamadas "<span lang="en">cores</span>". Es multiplataforma, ligero y portátil, con licencia GNU GPLv3.
                 </p>
                 <h4>Características:</h4>
                 <ul>
-                    <li>Dynamic Rate Control para sincronizar video y audio mientras se suavizan las imperfecciones de tiempo;</li>
-                    <li>Configuración automática de Gamepad - No requiere configuración por parte del usuario después de conectar un gamepad;</li>
+                    <li><span lang="en">Dynamic Rate Control</span> para sincronizar video y audio mientras se suavizan las imperfecciones de tiempo;</li>
+                    <li>Configuración automática de <span lang="en">Gamepad</span> - No requiere configuración por parte del usuario después de conectar un <span lang="en">Gamepad</span>;</li>
                     <li>Funciones avanzadas de almacenamiento: carga automática del estado de guardado, deshabilitación de sobreescritura de SRAM, etc;</li>
                     <li>Rebobinación del juego fotograma a fotograma con solo presionar un botón;</li>
-                    <li>Libretro base de datos de núcleos, juegos, cheats, etc;</li>
+                    <li>Libretro base de datos de núcleos, juegos, <span lang="en">cheats</span>, etc;</li>
                     <li>Soporte para las API OpenGL y Vulkan;</li>
                     <li>Funciones de juego en red. Se puede participar como anfitrión o unirse a una sesión de otras personas. Se puede usar el modo espectador para ver a terceros jugar;</li>
                 </ul>
@@ -151,7 +165,7 @@
         <article>
             <h2 id="nintendo">Nintendo</h2>
             <div class="conjuntoNintendo">
-                <p>Nintendo es una compañía japonesa de videojuegos fundada en 1889 en Kioto, inicialmente dedicada a la producción de cartas Hanafuda. A lo largo de su historia, se transformó en un gigante de la industria del entretenimiento interactivo, consolidándose como uno de los nombres más influyentes y reconocidos en el ámbito de los videojuegos. <br><br>Conocida por su enfoque en la innovación y el entretenimiento familiar, Nintendo ha creado franquicias icónicas como <em><a href="https://es.wikipedia.org/wiki/Super_Mario" target="_blank">Super Mario</a></em>, <em><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda" target="_blank">The Legend of Zelda</a></em>, <em><a href="https://es.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Pokémon</a></em> y <em><a href="https://es.wikipedia.org/wiki/Donkey_Kong_(serie)" target="_blank">Donkey Kong</a></em>. Además, ha revolucionado el mercado con consolas emblemáticas
+                <p>Nintendo es una compañía japonesa de videojuegos fundada en 1889 en Kioto, inicialmente dedicada a la producción de cartas Hanafuda. A lo largo de su historia, se transformó en un gigante de la industria del entretenimiento interactivo, consolidándose como uno de los nombres más influyentes y reconocidos en el ámbito de los videojuegos. <br><br>Conocida por su enfoque en la innovación y el entretenimiento familiar, Nintendo ha creado franquicias icónicas como <em lang="en"><a href="https://es.wikipedia.org/wiki/Super_Mario" target="_blank">Super Mario</a></em>, <em lang="en"><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda" target="_blank">The Legend of Zelda</a></em>, <em><a href="https://es.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Pokémon</a></em> y <em lang="en"><a href="https://es.wikipedia.org/wiki/Donkey_Kong_(serie)" target="_blank">Donkey Kong</a></em>. Además, ha revolucionado el mercado con consolas emblemáticas
                 como la NES, la Game Boy, la Wii y la Nintendo Switch. Su legado se basa en su capacidad para combinar creatividad,
                 tecnología y experiencias memorables que han cautivado a jugadores de todas las edades a lo largo de las décadas.</p>
 
@@ -195,7 +209,7 @@
         <article>
             <h2 id="sega">Sega</h2>
             <div class="conjuntoSega">
-                <p>SEGA es una empresa japonesa de entretenimiento y videojuegos fundada en 1960. Es conocida por desarrollar hardware de videojuegos, como consolas icónicas (Sega Genesis, Dreamcast) y por crear franquicias populares como Sonic the Hedgehog, Yakuza y Virtua Fighter. <br><br>En su historia, SEGA fue un líder influyente en la industria de las consolas, pero desde principios de los 2000, se centró en desarrollar y publicar videojuegos para múltiples plataformas tras abandonar la fabricación de hardware. También opera en otros sectores como juegos arcade y máquinas recreativas. Es una de las empresas más reconocidas en la historia de los videojuegos por su innovación y legado. Sega es el mayor desarrollador de juegos de arcade del mundo, con más de 500 juegos, 76 franquicias y 23 placas de sistemas arcade desde 1981, e inscrita en 2010 en el Libro Guinness de los récords por este hecho.</p>
+                <p>SEGA es una empresa japonesa de entretenimiento y videojuegos fundada en 1960. Es conocida por desarrollar hardware de videojuegos, como consolas icónicas (Sega Genesis, Dreamcast) y por crear franquicias populares como Sonic the Hedgehog, Yakuza y Virtua Fighter. <br><br>En su historia, SEGA fue un líder influyente en la industria de las consolas, pero desde principios de los 2000, se centró en desarrollar y publicar videojuegos para múltiples plataformas tras abandonar la fabricación de <span lang="en">hardware</span>. También opera en otros sectores como juegos arcade y máquinas recreativas. Es una de las empresas más reconocidas en la historia de los videojuegos por su innovación y legado. Sega es el mayor desarrollador de juegos de arcade del mundo, con más de 500 juegos, 76 franquicias y 23 placas de sistemas arcade desde 1981, e inscrita en 2010 en el Libro Guinness de los récords por este hecho.</p>
 
                 <a href="https://www.sega.com/es" title="Enlace web a la página de Sega" target="_blank">
                     <picture>
@@ -213,13 +227,13 @@
                     <li>Compatible con juegos de Sega Genesis/Mega Drive, Sega CD y 32X.</li>
                     <li>Ofrece alta compatibilidad con la mayoría de los títulos.</li>
                     <li>Soporte para multijugador local y conexión en red.</li>
-                    <li>Funciones avanzadas como guardado rápido, cheats y mejoras gráficas.</li>
+                    <li>Funciones avanzadas como guardado rápido, <span lang="en">cheats</span> y mejoras gráficas.</li>
                     <li>Disponible para Windows, macOS y Linux.</li>
                 </ul>
                 <h3><a href="https://mednafen.github.io/" target="_blank" title="Ve a la página oficial de Mednafen">2. Mednafen</a></h3>
                 <p>Mednafen (acrónimo de My Emulator Doesn't Need A Frickin' Excellent Name) es un emulador de código abierto, multiplataforma y altamente configurable que soporta una amplia gama de consolas retro y sistemas de videojuegos. Funciona como un emulador multi-sistema, lo que significa que permite ejecutar juegos de varias consolas clásicas desde una sola aplicación.</p>
                 <ul>
-                    <li>Alta precisión: Es conocido por su enfoque en la emulación precisa, lo que garantiza una experiencia cercana al hardware original.</li>
+                    <li>Alta precisión: Es conocido por su enfoque en la emulación precisa, lo que garantiza una experiencia cercana al <span lang="en">hardware</span> original.</li>
                     <li>Soporte para controles y personalización: Admite configuraciones avanzadas de controladores.</li>
                     <li>Características avanzadas: Guardado rápido, rebobinado de juegos en tiempo real, soporte para juegos en red.</li>
                     <li>Multiplataforma: Funciona en sistemas operativos como Windows, macOS y Linux.</li>
